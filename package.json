@@ -1,8 +1,8 @@
 {
-  "name": "pinwheel-astro",
-  "version": "2.0.1",
-  "description": "Astro and Tailwindcss boilerplate",
-  "author": "themefisher",
+  "name": "inducitrica",
+  "version": "1.0.0",
+  "description": "Inducítrica website",
+  "author": "eze",
   "license": "MIT",
   "packageManager": "yarn@1.22.19",
   "scripts": {
