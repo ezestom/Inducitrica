@@ -13,7 +13,7 @@
       "url": "/contact"
     },
     {
-      "name": "Plantaciones",
+      "name": "Datos",
       "url": "/carrers"
     },
     {
@@ -48,11 +48,11 @@
       "url": "/contact"
     },
     {
-      "name": "Elements",
-      "url": "/elements"
+      "name": "Datos",
+      "url": "/carrers"
     },
     {
-      "name": "Changelog",
+      "name": "Últimos registros",
       "url": "/changelog"
     }
   ]

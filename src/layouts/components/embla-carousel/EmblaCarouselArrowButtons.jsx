@@ -1,20 +1,18 @@
 import React, { useCallback, useEffect, useState } from "react";
 
-export const usePrevNextButtons = (emblaApi, onButtonClick) => {
+export const usePrevNextButtons = (emblaApi) => {
   const [prevBtnDisabled, setPrevBtnDisabled] = useState(true);
   const [nextBtnDisabled, setNextBtnDisabled] = useState(true);
 
   const onPrevButtonClick = useCallback(() => {
     if (!emblaApi) return;
     emblaApi.scrollPrev();
-    if (onButtonClick) onButtonClick(emblaApi);
-  }, [emblaApi, onButtonClick]);
+  }, [emblaApi]);
 
   const onNextButtonClick = useCallback(() => {
     if (!emblaApi) return;
     emblaApi.scrollNext();
-    if (onButtonClick) onButtonClick(emblaApi);
-  }, [emblaApi, onButtonClick]);
+  }, [emblaApi]);
 
   const onSelect = useCallback((emblaApi) => {
     setPrevBtnDisabled(!emblaApi.canScrollPrev());

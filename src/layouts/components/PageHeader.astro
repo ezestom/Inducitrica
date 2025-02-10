@@ -5,7 +5,7 @@ const { page_data } = Astro.props || {};
 const { title, index_title, page_title, slug, content } = page_data || {};
 ---
 
-<div class="text-center">
+<div class="text-center rounded-t-3xl py-12 shadow" id="hero-sections">
   <ul
     class="breadcrumb inline-flex h-8 items-center justify-center space-x-2 rounded-3xl bg-theme-light px-4 py-2">
     <li class="leading-none text-dark flex items-center justify-center">
@@ -40,33 +40,52 @@ const { title, index_title, page_title, slug, content } = page_data || {};
       }
     </li>
   </ul>
-  <div class="mx-auto text-balance lg:px-24 rounded-3xl  lg:py-12">
+  <div class="w-full text-balance lg:px-24 lg:py-12">
     <h6
-      class="mb-5 mt-8 text-2xl lg:text-3xl font-bold w-full pb-6"
+      class="font-black text-[2rem] pt-4 lg:!text-[4vw] text-white"
       set:html={markdownify(
         page_data?.page_title ? page_data?.page_title : page_data?.title
       )}
     />
-    <p class="text-center text-sm lg:text-xl" set:html={markdownify(content)} />
   </div>
 
   <!-- {
     page_data.buttons && (
-      <div class="mt-11 justify-center sm:flex">
-        {page_data.buttons.map(
+    <div class="mt-11 justify-center sm:flex">
+      {page_data.buttons.map(
           (button: any) =>
-            button?.enable && (
-              <a
-                class={`btn m-3 block sm:inline-block ${
-                  button?.outline ? "btn-outline-primary" : "btn-primary"
-                } `}
-                href={button?.link}
-              >
-                {button?.label}
-              </a>
+          button?.enable && (
+          <a
+          class={`btn m-3 block sm:inline-block ${
+            button?.outline ? "btn-outline-primary" : "btn-primary"
+            } `}
+            href={button?.link}
+            >
+            {button?.label}
+            </a>
             )
-        )}
-      </div>
-    )
-  } -->
+            )}
+            </div>
+            )
+            } -->
 </div>
+
+<div
+  class="container mx-auto py-12 rounded-b-3xl bg-white p-5 shadow-lg lg:p-10">
+  <p
+    class="text-start text-sm lg:text-xl mx-auto text-balance max-w-[75ch]"
+    set:html={markdownify(content)}
+  />
+</div>
+
+<style>
+  #hero-sections {
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+      url("/images/inducitrica/quinta2.jpg");
+    width: 100%;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    z-index: 10;
+  }
+</style>

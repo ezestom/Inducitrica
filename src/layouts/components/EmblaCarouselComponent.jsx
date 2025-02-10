@@ -1,10 +1,12 @@
-import EmblaCarousel from "../../layouts/components/embla-carousel/EmblaCarousel";
+import EmblaCarousel from "../components/embla-carousel/EmblaCarousel.jsx";
+import expo1 from "../../../public/images/inducitrica/expo1.jpg";
+import expo2 from "../../../public/images/inducitrica/expo2.jpg";
+import expo3 from "../../../public/images/inducitrica/expo3.jpg";
 
+const IMAGES = [{ src: expo1.src }, { src: expo2.src }, { src: expo3.src }];
 
-const OPTIONS = { loop: true };
-const SLIDE_COUNT = 5;
-const SLIDES = Array.from(Array(SLIDE_COUNT).keys());
+const OPTIONS = {};
 
 export function EmblaCarouselComponent() {
-  return <EmblaCarousel slides={SLIDES} options={OPTIONS} />;
+  return <EmblaCarousel slides={IMAGES} options={OPTIONS} />;
 }
