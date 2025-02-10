@@ -11,7 +11,10 @@ const { title, subtitle, button, image, content } = banner;
     <div class="copy">
       <div
         class="container text-white absolute bottom-0 mx-auto right-0 left-0">
-        <h1 class="font-black text-[4rem] lg:!text-[10vw]" set:html={markdownify(title)} />
+        <h1
+          class="font-black text-[4rem] lg:!text-[10vw]"
+          set:html={markdownify(title)}
+        />
         <hr class="mx-auto w-[75%]" />
         <h5
           class="mt-4 font-bold text-base !text-white text-xl lg:!text-4xl"

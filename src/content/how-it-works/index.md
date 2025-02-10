@@ -24,7 +24,7 @@ our_works:
       - Sucesores de Salomón S.R.L.
   
   - title: "Inducítrica es una empresa especializada en la comercialización de productos industriales derivados del limón, los cuales pueden elaborarse tanto en su versión convencional como orgánica."
-    image: "/images/how-it-work/image-2.png"
+    image: "/images/inducitrica/certified1.png"
     list:
       - Jugo concentrado de limón
       - Aceite esencial de limón

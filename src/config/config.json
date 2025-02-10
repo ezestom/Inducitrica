@@ -1,6 +1,6 @@
 {
   "site": {
-    "title": "Inducitrica website",
+    "title": "Inducítrica",
     "base_url": "https://inducitrica.vercel.app",
     "base_path": "/",
     "trailing_slash": false,
