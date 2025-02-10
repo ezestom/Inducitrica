@@ -56,7 +56,7 @@ const { pathname } = Astro.url;
         main.map((menu) => (
           <>
             {menu.hasChildren ? (
-              <li class="nav-item nav-dropdown group relative cursor-pointer  dropdown-button">
+              <li class="nav-item nav-dropdown group relative cursor-pointer  dropdown-button font-bold">
                 <span
                   class={`nav-link inline-flex items-center ${
                     menu.children?.map(({ url }) => url).includes(pathname) ||
@@ -106,12 +106,12 @@ const { pathname } = Astro.url;
       }
       <li class="nav-item mt-2 lg:hidden">
         <a class="btn btn-white btn-sm border-border" href="/contact">
-          Contacta con nuestro equipo</a
+          Contactanos</a
         >
       </li>
     </ul>
     <div class="order-1 ml-auto hidden items-center md:order-2 md:ml-0 lg:flex">
-      <a class="btn btn-white btn-sm" href="/contact"> Contacta con nuestro equipo</a>
+      <a class="btn btn-white btn-sm" href="/contact"> Contactanos</a>
     </div>
   </nav>
 </header>

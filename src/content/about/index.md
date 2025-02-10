@@ -1,6 +1,6 @@
 ---
-title: "Nuestra Compañía"
-page_title: "Nuestra Compañía"
+title: "Nosotros"
+page_title: "Nosotros"
 buttons:
   - label: Download The Theme
     link: "https://themefisher.com/astro-themes/pinwheel-astro"
