@@ -1,7 +1,5 @@
 ---
 import { markdownify } from "@/lib/utils/textConverter";
-import { Image } from "astro:assets";
-import { EmblaCarouselComponent } from "../components/EmblaCarouselComponent.jsx";
 const { banner } = Astro.props;
 const { title, subtitle, button, image, content } = banner;
 ---
@@ -20,23 +18,14 @@ const { title, subtitle, button, image, content } = banner;
           class="mt-4 font-bold text-base !text-white text-xl lg:!text-4xl"
           set:html={markdownify(subtitle)}
         />
-
-        <!-- {
-              button.enable && (
-                <a class="btn btn-white mt-8" href={button.link}>
-                  {button.label}
-                </a>
-              )
-            } -->
-
-        <!-- <EmblaCarouselComponent client:visible /> -->
       </div>
     </div>
   </div>
 </section>
+
 <style>
   #hero {
-    background-image: url("../public/images/inducitrica/quinta3.jpg");
+    background-image: url("/images/inducitrica/quinta3.jpg");
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
@@ -46,13 +35,16 @@ const { title, subtitle, button, image, content } = banner;
     width: 100%;
   }
 
-  #hero .inner{
-    background-size: cover;
-    background: rgba(0, 0, 0, 0.15);
-    z-index: -10;
+  #hero .inner {
+    background: rgba(0, 0, 0, 0.1) url("/images/inducitrica/diagonal-lines.svg");
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
+    z-index: 1;
   }
+
   .copy {
     position: absolute;
     top: 50%;
