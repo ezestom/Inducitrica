@@ -2,8 +2,8 @@
   "colors": {
     "default": {
       "theme_color": {
-        "primary": "#FE6019",
-        "secondary": "#FEE140",
+        "primary": "#8bcfad",
+        "secondary": "#e6f6ee",
         "body": "#fafafa",
         "border": "#EBEBEB",
         "theme_light": "#E5E5E5",
@@ -19,7 +19,7 @@
 
   "fonts": {
     "font_family": {
-      "primary": "Poppins:wght@400;500;600;700",
+      "primary": "Inter:wght@400;500;600;700",
       "primary_type": "sans-serif",
       "secondary": "Merriweather:wght@700;900",
       "secondary_type": "sans-serif"

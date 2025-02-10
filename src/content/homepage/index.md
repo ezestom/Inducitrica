@@ -1,48 +1,48 @@
 ---
 banner:
-  title: "Scale design & dev operations with Avocode Enterprise"
-  content: "A fully integrated suite of authentication & authoriz products, Stytch’s platform removes the headache of."
-  image: /images/banner-img.png
+  title: "Inducítrica"
+  subtitle: "Líderes en la producción de cítricos"
+  image: /images/inducitrica/lemon14.jpg
   button:
-    label: Download The Theme
-    link: "https://themefisher.com/astro-themes/pinwheel-astro"
+    label: Contacta con nuestro equipo
+    link: "#"
     enable: true
+
+#
+# perfomance:
+#   - title: Jugo concentrado de limón
+#   - subtitle: Encourage frequent & timely recognition integrating with communication tools
+#   - step: Jugo concentrado de limón
+#     description: Encourage frequent & timely recognition integrating with communication tools
+#     image: "/images/how-it-work/results.png"
+#   - step: Aceite esencial de limón
+#     description: Encourage frequent & timely recognition integrating with communication tools
+#     image: "/images/how-it-work/market-professionals.png"
+#   - step: Cáscara de limón deshidratada
+#     description: Encourage frequent & timely recognition integrating with communication tools
+#     image: "/images/how-it-work/awards.png"
 
 ##key features
 key_features:
-  title: "The Highlighting Part Of Our Solution"
-  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi egestas Werat viverra id et aliquet. vulputate egestas sollicitudin.
+  title: "Proyecciones 2031"
+  description: Viendo esta proyecciones y el crecimiento del grupo, esto requiere la necesidad de poder montar una fabrica para industrializar su limón propio. Hoy el grupo cuenta con 35.000 Tn de fruta propia y la proyección de producción superara las 60.000 Tn en los próximos 5 años, esto lleva a solicitarles, poder entablar conversaciones con el objeto de  obtener un contrato de comercialización y aprovisionamiento con Coca Cola Company  
+
   feature_list:
-    - icon: "map"  #icon package react-feather-icon [https://feathericons.com/]
-      title: Live Caption
-      content: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    - icon: "lock"  #icon package react-feather-icon [https://feathericons.com/]
-      title: Smart Reply
-      content: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    - icon: "link"  #icon package react-feather-icon [https://feathericons.com/]
-      title: Sound Amplifier
-      content: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    - icon: "bell"  #icon package react-feather-icon [https://feathericons.com/]
-      title: Sound Amplifier
-      content: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    - icon: "monitor"  #icon package react-feather-icon [https://feathericons.com/]
-      title: Smart Reply
-      content: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    - icon: "map"  #icon package react-feather-icon [https://feathericons.com/]
-      title: Live Caption
-      content: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    - icon: "link"  #icon package react-feather-icon [https://feathericons.com/]
-      title: Sound Amplifier
-      content: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    - icon: "bell"  #icon package react-feather-icon [https://feathericons.com/]
-      title: Sound Amplifier
-      content: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    - icon: "map"  #icon package react-feather-icon [https://feathericons.com/]
-      title: Smart Reply
-      content: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    - icon: "monitor"  #icon package react-feather-icon [https://feathericons.com/]
-      title: Live Caption
-      content: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    - icon: "settings"
+      title: Blazquez
+      content: Proyección 2031 = 8,104 toneladas de cítricos
+
+    - icon: "trending-up"
+      title: Delotte
+      content: Proyección 2031 = 11,160 toneladas de cítricos
+
+    - icon: "shield"
+      title: Donato Alvarez
+      content: Proyección 2031 = 11,000 toneladas de cítricos
+
+    - icon: "cpu"
+      title: SS Jalil
+      content: Proyección 2031 = 29,826 toneladas de cítricos
 
 #service
 service:
@@ -50,15 +50,15 @@ service:
     title: Prevent failure from to impacting your reputation
     description: Our platform helps you build secure onboarding authentication experiences that retain and engage your users. We build the infrastructure, you can.
     tab_list:
-        - title: Habit building essential choose habit
-          icon: "lock"  #icon package react-feather-icon [https://feathericons.com/]
-          image: "/images/sells-by-country.png"
-        - title: Get an overview of Habit Calendars.
-          icon: "clock"  #icon package react-feather-icon [https://feathericons.com/]
-          image: "/images/collaboration.png"
-        - title: Start building with Habitify platform
-          icon: "bell"  #icon package react-feather-icon [https://feathericons.com/]
-          image: "/images/sells-by-country.png"
+      - title: Habit building essential choose habit
+        icon: "lock" #icon package react-feather-icon [https://feathericons.com/]
+        image: "/images/sells-by-country.png"
+      - title: Get an overview of Habit Calendars.
+        icon: "clock" #icon package react-feather-icon [https://feathericons.com/]
+        image: "/images/collaboration.png"
+      - title: Start building with Habitify platform
+        icon: "bell" #icon package react-feather-icon [https://feathericons.com/]
+        image: "/images/sells-by-country.png"
 
   our_service:
     - title: Accept payments any country in this whole universe

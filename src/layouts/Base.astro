@@ -68,19 +68,21 @@ const { title, meta_title, description, image, noindex, canonical } =
           src: [],
           preload: false,
           display: "swap",
-          name: fontPrimary!,
+          name: "Inter",
           fallback: "sans-serif",
           cssVariable: "font-primary",
-          googleFontsURL: `https://fonts.googleapis.com/css2?family=${pf}&display=swap`,
+          googleFontsURL:
+            "https://fonts.googleapis.com/css2?family=Inter&display=swap",
         },
         {
           src: [],
           preload: false,
           display: "swap",
-          name: fontSecondary!,
+          name: "Inter",
           fallback: "sans-serif",
           cssVariable: "font-secondary",
-          googleFontsURL: `https://fonts.googleapis.com/css2?family=${sf}&display=swap`,
+          googleFontsURL:
+            "https://fonts.googleapis.com/css2?family=Inter&display=swap",
         },
       ]}
     />
@@ -106,7 +108,7 @@ const { title, meta_title, description, image, noindex, canonical } =
     <meta
       name="description"
       content={plainify(
-        description ? description : config.metadata.meta_description,
+        description ? description : config.metadata.meta_description
       )}
     />
 
@@ -119,7 +121,7 @@ const { title, meta_title, description, image, noindex, canonical } =
     <meta
       property="og:title"
       content={plainify(
-        meta_title ? meta_title : title ? title : config.site.title,
+        meta_title ? meta_title : title ? title : config.site.title
       )}
     />
 
@@ -127,7 +129,7 @@ const { title, meta_title, description, image, noindex, canonical } =
     <meta
       property="og:description"
       content={plainify(
-        description ? description : config.metadata.meta_description,
+        description ? description : config.metadata.meta_description
       )}
     />
     <meta property="og:type" content="website" />
@@ -140,7 +142,7 @@ const { title, meta_title, description, image, noindex, canonical } =
     <meta
       name="twitter:title"
       content={plainify(
-        meta_title ? meta_title : title ? title : config.site.title,
+        meta_title ? meta_title : title ? title : config.site.title
       )}
     />
 
@@ -148,7 +150,7 @@ const { title, meta_title, description, image, noindex, canonical } =
     <meta
       name="twitter:description"
       content={plainify(
-        description ? description : config.metadata.meta_description,
+        description ? description : config.metadata.meta_description
       )}
     />
 
@@ -170,7 +172,7 @@ const { title, meta_title, description, image, noindex, canonical } =
     <meta name="twitter:card" content="summary_large_image" />
   </head>
   <body>
-    <TwSizeIndicator />
+    <!-- <TwSizeIndicator /> -->
     <Header />
     <main id="main-content">
       <slot />
@@ -178,3 +180,10 @@ const { title, meta_title, description, image, noindex, canonical } =
     <Footer />
   </body>
 </html>
+
+<style>
+  :root {
+    scrollbar-width: thin;
+    scrollbar-color: #8bcfad transparent;
+  }
+</style>

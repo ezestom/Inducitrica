@@ -20,20 +20,16 @@ const page_data = {
   title={about.data.title}
   meta_title={about.data.meta_title}
   description={about.data.description}
-  image={about.data.image}
->
-  <Shape />
-  <section class="page-hero py-16">
+  image={about.data.image}>
+  <section class="py-16 lg:py-32">
     <div class="container">
-      <div class="page-hero-content mx-auto max-w-[768px] text-center">
-        <PageHeader page_data={page_data} />
-      </div>
-      <CounterComponent counter={counter} />
+      <PageHeader page_data={page_data} />
       <!-- benifit -->
-      <!-- gellary -->
-      <Gallery gallery={gallery} />
+      <CounterComponent counter={counter} />
       <!-- our works -->
       <Works features={features} />
+      <!-- gellary -->
+      <Gallery gallery={gallery} />
       <!-- our members -->
       <OurMembers members={members} />
     </div>

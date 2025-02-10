@@ -8,7 +8,7 @@
     "logo": "/images/logo.png",
     "logo_width": "147",
     "logo_height": "31",
-    "logo_text": "Pinwheel"
+    "logo_text": "Inducítrica"
   },
 
   "settings": {
@@ -18,32 +18,32 @@
   },
 
   "call_to_action": {
-    "title": "Helping teams in the world with focus",
-    "description": "Lorem ipsum dolor sit sed dmi amet, consectetur adipiscing. Cdo tellus, sed condimentum volutpat.",
+    "title": "Transformando el futuro agrícola con innovación y compromiso",
+    "description": "Inducítrica, con más de 20 años de experiencia, no solo es líder en la producción de limón, sino también en el desarrollo de productos derivados que combinan calidad, sostenibilidad y vanguardia. Nos dedicamos a la creación de alianzas estratégicas que impulsan un futuro más sostenible y próspero para todos.",
     "button": {
-      "label": "Download The Theme",
-      "link": "https://themefisher.com/astro-themes/pinwheel-astro"
+      "label": "Descubre más sobre nosotros",
+      "link": "/about"
     }
   },
 
   "disqus": {
     "enable": true,
-    "shortname": "themefisher-template",
+    "shortname": "",
     "settings": {}
   },
 
   "params": {
-    "footer_description": "Lorem ipsum dolor sit sed dmi amet, consectetur adipiscing. Cdo tellus, sed condimentum volutpat.",
+    "footer_description": "",
     "email": "info@andromeda.io",
     "location": "2118 Thornridge Cir. Syracuse, Connecticut 35624",
     "phone": "+704-555-0127",
     "contact_form_action": "#",
-    "copyright": "Copyright © 2023 a theme by [Themefisher](https://themefisher.com)"
+    "copyright": "Copyright © 2025 [Inducítrica](https://inducitrica.com)"
   },
 
   "metadata": {
-    "meta_author": "Themefisher",
+    "meta_author": "Inducítrica",
     "meta_image": "/images/og-image.png",
-    "meta_description": "pinwheel astro"
+    "meta_description": "astro"
   }
 }

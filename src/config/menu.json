@@ -1,76 +1,50 @@
 {
   "main": [
     {
-      "name": "Home",
+      "name": "Inicio",
       "url": "/"
     },
     {
-      "name": "About",
+      "name": "Nosotros",
       "url": "/about"
     },
     {
-      "name": "Blog",
-      "url": "/blog"
+      "name": "Contacto",
+      "url": "/contact"
     },
     {
-      "name": "Features",
-      "url": "/features"
+      "name": "Plantaciones",
+      "url": "/carrers"
     },
     {
-      "name": "How It Works",
-      "url": "/how-it-works"
-    },
-    {
-      "name": "Pages",
+      "name": "Contenido",
       "url": "",
       "hasChildren": true,
       "children": [
         {
-          "name": "Career",
-          "url": "/career"
+          "name": "Últimos registros",
+          "url": "/changelog"
         },
-
         {
           "name": "Integrations",
           "url": "/integrations"
         },
 
         {
-          "name": "Pricing",
-          "url": "/pricing"
-        },
-        {
-          "name": "Sign In",
-          "url": "/signin"
-        },
-
-        {
-          "name": "Elements",
-          "url": "/elements"
-        },
-        {
-          "name": "Changelog",
-          "url": "/changelog"
-        },
-        {
-          "name": "Terms And Conditions",
-          "url": "/terms-and-conditions"
+          "name": "Blog",
+          "url": "/blog"
         }
       ]
-    },
-    {
-      "name": "Contact",
-      "url": "/contact"
     }
   ],
 
   "footer": [
     {
-      "name": "About",
+      "name": "Nosotros",
       "url": "/about"
     },
     {
-      "name": "Contact",
+      "name": "Contacto",
       "url": "/contact"
     },
     {

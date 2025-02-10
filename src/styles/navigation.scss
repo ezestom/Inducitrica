@@ -12,11 +12,17 @@ input#nav-toggle:checked ~ #nav-menu {
 }
 
 .header {
-  @apply sticky top-0 z-50  bg-white py-6 transition-all duration-300 lg:bg-transparent;
+  @apply sticky top-0 z-50 py-2 transition-all duration-300 lg:bg-black/25;
 
   &-sticky {
-    @apply bg-white shadow;
+    @apply bg-black/50 shadow backdrop-blur-sm;
   }
+}
+@media (max-width: 1024px) {
+  .header {
+    @apply bg-black/75 pb-4 gap-4;
+  }
+  
 }
 
 // navbar items
@@ -36,7 +42,7 @@ input#nav-toggle:checked ~ #nav-menu {
 }
 
 .nav-link {
-  @apply block p-3 py-2 text-[15px] text-dark transition hover:text-primary md:px-2 lg:inline-block;
+  @apply block p-3 py-2 text-[15px] text-white transition hover:text-primary md:px-2 lg:inline-block;
 
   &.active {
     @apply relative;

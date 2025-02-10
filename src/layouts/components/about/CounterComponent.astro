@@ -11,14 +11,8 @@ const { counter } = Astro.props;
             <span class="count" aria-valuenow={item.number}>
               0
             </span>
-            <span
-              class={"text-primary"}
-              style={{
-                color: item.color,
-              }}
-            >
-              +
-            </span>
+            <span>{item.messurment}</span>
+            <span class={"text-primary"}>+</span>
           </h2>
           <p>{item.name}</p>
         </div>

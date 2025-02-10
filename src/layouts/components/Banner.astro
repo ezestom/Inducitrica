@@ -1,43 +1,80 @@
 ---
 import { markdownify } from "@/lib/utils/textConverter";
 import { Image } from "astro:assets";
+import { EmblaCarouselComponent } from "../components/EmblaCarouselComponent.jsx";
 const { banner } = Astro.props;
-const { title, button, image, content } = banner;
+const { title, subtitle, button, image, content } = banner;
 ---
 
-<section class="section banner relative">
-  <div class="container">
-    <div class="row items-center">
-      <div class="lg:col-6">
-        <h1 class="banner-title" set:html={markdownify(title)} />
-
-        <p class="mt-6" set:html={markdownify(content)} />
-
-        {
-          button.enable && (
-            <a class="btn btn-white mt-8" href={button.link}>
-              {button.label}
-            </a>
-          )
-        }
-      </div>
-      <div class="lg:col-6">
-        <Image
-          class="w-full object-contain"
-          alt="banner"
-          src={image}
-          width={603}
-          height={396}
+<section class="hero banner relative h-screen" id="hero">
+  <div class="inner">
+    <div class="copy">
+      <div
+        class="container text-white absolute bottom-0 mx-auto right-0 left-0">
+        <h1 class="font-black lg:!text-[10vw]" set:html={markdownify(title)} />
+        <hr class="mx-auto w-[75%]" />
+        <h5
+          class="mt-4 font-bold text-base !text-white text-xl lg:!text-4xl"
+          set:html={markdownify(subtitle)}
         />
+
+        <!-- {
+              button.enable && (
+                <a class="btn btn-white mt-8" href={button.link}>
+                  {button.label}
+                </a>
+              )
+            } -->
+
+        <!-- <EmblaCarouselComponent client:visible /> -->
       </div>
     </div>
   </div>
-
-  <Image
-    class="banner-shape absolute -top-28 right-0 -z-[1] w-full max-w-[30%]"
-    alt="banner"
-    src="/images/banner-shape.png"
-    width={496}
-    height={466}
-  />
 </section>
+<style>
+  section {
+    z-index: 1;
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    background: rgba(0, 0, 0, 0.1);
+    height: 100vh;
+  }
+
+  #hero {
+    background: url("../public/images/inducitrica/quinta3.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+  }
+  .hero,
+  .content {
+    text-align: center;
+    position: relative;
+    width: 100%;
+  }
+
+  .inner {
+    min-height: 600px;
+    position: relative;
+  }
+
+  #hero .inner {
+    background-size: cover;
+    background: rgba(0, 0, 0, 0.25)
+      url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAYAAACddGYaAAAAD0lEQVQIW2NkQABjRmQOAAM+AGkQsDBSAAAAAElFTkSuQmCC)
+      repeat;
+
+    background-position: center center;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+  }
+  .copy {
+    position: absolute;
+    top: 50%;
+    height: 10em;
+    margin-top: -5em;
+    width: 100%;
+  }
+</style>

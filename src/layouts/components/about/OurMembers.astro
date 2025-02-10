@@ -5,12 +5,12 @@ const {
 } = Astro.props;
 ---
 
-<section class="section">
-  <div class="container">
+<section class="section py-16 lg:py-32">
+  <div class="container mx-auto rounded-3xl bg-white p-6 shadow-lg lg:p-8">
     <div class="row">
-      <div class="mx-auto text-center lg:col-6">
-        <h2>{title}</h2>
-        <p class="mt-4">
+      <div class="text-center mx-auto lg:col-6">
+        <h6 class="mb-2 text-3xl lg:text-5xl font-bold w-full pb-4">{title}</h6>
+        <p class="">
           {description}
         </p>
       </div>
@@ -25,7 +25,7 @@ const {
                   <Image
                     height={112}
                     width={112}
-                    class="rouded-full h-28 w-28"
+                    class="rounded-full h-28 w-28 object-cover shadow-lg"
                     src={item.image}
                     alt=""
                   />
