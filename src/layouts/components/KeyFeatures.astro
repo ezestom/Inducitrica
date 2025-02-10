@@ -12,7 +12,7 @@ const { title, description, feature_list } = key_features;
       <div class="mb-6">
         <h2 class="h2 text-black" set:html={markdownify(title)} />
       </div>
-      <p class="text-black text-pretty" set:html={markdownify(description)} />
+      <p class="text-black/50 text-pretty" set:html={markdownify(description)} />
     </div>
     <HomapageFeature feature_list={feature_list} client:load />
   </div>

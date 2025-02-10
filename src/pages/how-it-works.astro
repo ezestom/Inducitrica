@@ -40,7 +40,7 @@ const page_data = {
             <img
               src={item.image}
               alt={`Imagen de ${item.title}`}
-              class="w-full h-auto rounded-3xl drop-shadow-lg"
+              class="mx-auto h-auto rounded-3xl drop-shadow-lg max-h-[550px]"
             />
           </div>
         </div>
@@ -69,11 +69,11 @@ const page_data = {
                 height={400}
                 src={item.image}
                 alt=""
-                class="w-full h-full rounded-t-md object-cover max-h-[300px] lg:max-h-[450px]"
+                class="w-full h-full rounded-t-md object-cover max-h-[300px] lg:max-h-[400px] object-center"
               />
               <div class="p-12 text-center">
                 <h4 class="h4 text-start">{item.title}</h4>
-                <p class="mt-4 text-sm max-w-[50ch] text-start">
+                <p class="mt-4 text-sm max-w-[50ch] !text-black/50 text-start">
                   {item.description}
                 </p>
                 <h3 class="h3">{item.step}</h3>

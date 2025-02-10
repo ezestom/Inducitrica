@@ -31,7 +31,7 @@ our_works:
       - Cáscara deshidratada de limón
 
   - title: "Además de ser productores pioneros en la producción de limón en el sur de la provincia, Inducítrica desarrolla otras actividades agrícolas como caña de azúcar, soja, granos, arándanos, naranjas, palta, entre otras."
-    image: "/images/how-it-work/image-2.png"
+    image: "/images/inducitrica/certified2.png"
     list:
       - Caña de azúcar
       - Soja
@@ -41,14 +41,14 @@ our_works:
       - Palta
 
   - title: "En 2017, los productores firmaron un contrato de fason con la empresa citrícola más grande de Argentina, SA San Miguel, asegurando una alianza comercial estratégica de largo plazo."
-    image: "/images/how-it-work/image-2.png"
+    image: "/images/inducitrica/certified4.png"
     list:
       - Alianza comercial con SA San Miguel
       - Horizonte de crecimiento y expansión
       - Inversión en tierras
 
   - title: "Con el crecimiento y la proyección de la empresa, Frutucuman S.A. se ha consolidado como la exportadora más importante de frutas de Argentina, con planes de expansión y una gran proyección en la producción."
-    image: "/images/how-it-work/image-2.png"
+    image: "/images/inducitrica/certified3.png"
     list:
       - Frutucuman S.A.
       - Exportadora líder en Argentina
