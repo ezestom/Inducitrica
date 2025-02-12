@@ -16,7 +16,7 @@ perfomance:
 # works
 our_works:
   - title: "Somos una empresa líder en la producción de limón, conformada por cuatro compañías con campos estratégicamente ubicados en el sur de la provincia de Tucumán, una de las mejores regiones para el cultivo de cítricos. Con más de 30 años de experiencia en el sector, garantizamos calidad, innovación y compromiso con la excelencia."
-    image: "/images/inducitrica/farmer1.jpg"
+    image: "/images/inducitrica/lemon.jpg"
     list:
       - Frutucuman S.A.
       - Blazquez S.R.L.
@@ -44,8 +44,9 @@ our_works:
   - title: "Con un crecimiento constante, Frutucuman S.A. se ha consolidado como la exportadora más importante de frutas de Argentina, con planes de expansión que nos permitirán alcanzar una producción de 70.000 toneladas en los próximos 5 a 10 años."
     image: "/images/inducitrica/farm7.jpg"
     list:
-      - Alianza comercial con SA San Miguel
+      - Inducítrica S.A.
       - Horizonte de crecimiento y expansión
+      - Relaciones duraderas con socios internos y externos
       - Inversión en tierras
 
 

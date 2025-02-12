@@ -29,19 +29,19 @@ key_features:
 
   feature_list:
     - icon: "settings"
-      title: Blazquez
+      title: Blazquez S.R.L.
       content: Proyección 2031 = 8,104 toneladas de cítricos
 
     - icon: "trending-up"
-      title: Delotte
+      title: Delotte S.A.
       content: Proyección 2031 = 11,160 toneladas de cítricos
 
     - icon: "shield"
-      title: Donato Alvarez
+      title: Donato Alvarez S.R.L.
       content: Proyección 2031 = 11,000 toneladas de cítricos
 
     - icon: "cpu"
-      title: SS Jalil
+      title: SS Jalil S.R.L.
       content: Proyección 2031 = 29,826 toneladas de cítricos
 
 #service
