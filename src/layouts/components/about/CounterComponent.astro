@@ -3,18 +3,19 @@ const { counter } = Astro.props;
 ---
 
 <div class="counter mt-16">
-  <div class="row mx-0 rounded-[20px] bg-white px-10 shadow-lg lg:py-10">
+  <div
+    class="row mx-0 rounded-[20px] bg-white px-10 shadow-lg lg:py-10 flex justify-around">
     {
       counter.map((item: any) => (
-        <div class="border-border sm:col-6 lg:col-3 px-10 py-10 text-center lg:border-r lg:py-0 last:lg:border-none">
-          <h2>
+        <div class="border-border  px-10 py-10 text-center lg:py-0  w-auto">
+          <h2 class="">
+            <span class={"text-primary"}>+</span>
             <span class="count" aria-valuenow={item.number}>
               0
             </span>
             <span>{item.messurment}</span>
-            <span class={"text-primary"}>+</span>
           </h2>
-          <p>{item.name}</p>
+          <p class="lg:text-xl">{item.name}</p>
         </div>
       ))
     }
@@ -25,7 +26,7 @@ const { counter } = Astro.props;
   // astro:page-load event is fired when the page is loaded
   document.addEventListener("astro:page-load", () => {
     const counters = document.querySelectorAll(".count");
-    const speed = 700;
+    const speed = 500;
     counters.forEach((counter) => {
       const animate = () => {
         const value = +counter.getAttribute("aria-valuenow");

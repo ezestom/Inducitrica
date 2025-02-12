@@ -13,17 +13,14 @@ buttons:
 # counter
 counter:
   - name: "Clientes"
-    number: 50
+    number: 15
+    messurment:
+  - name: "Facturación"
+    number: 15
     messurment: M
-  - name: "Expotaciones"
-    number: 440
-    messurment: M
-  - name: "Cosechas"
-    number: 50
-    messurment: K
-  - name: "Consumo Local"
-    number: 20
-    messurment: K
+  - name: "Plantaciones"
+    number: 2000
+    messurment: HA
 
 # Gallery
 gallery:
@@ -71,7 +68,7 @@ members:
     - name: Ana Mendilharzu
       field: Ceo Blazquez
       image: "/images/users/ana.jpg"
-    - name:  Diego Decima
+    - name: Diego Decima
       field: Ceo Inducítrica
       image: "/images/users/diego.png"
 ---
