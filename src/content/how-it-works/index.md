@@ -8,7 +8,7 @@ perfomance:
     description: El jugo de limón natural se obtiene mediante un proceso de extracción en máquinas especializadas que exprimirán los limones que llegan a nuestra fábrica de procesamiento. Este jugo se utiliza en la elaboración de diversas bebidas, ofreciendo un sabor fresco y natural.
     image: "/images/inducitrica/lemonJuice1.jpg"
   - title: Aceite esencial de limón
-    description: El aceite esencial de limón se obtiene mediante el rallado de la cáscara del limón, seguido de una punción en la fruta. Luego, pasa por un proceso de centrifugación y desparafinado en frío. Este aceite se utiliza como aromatizante natural en alimentos y es ampliamente empleado en las industrias cosmética y de fragancias por sus propiedades frescas y naturales.
+    description: El aceite esencial de limón se obtiene mediante el rallado de la cáscara del limón. Luego, pasa por un proceso de centrifugación y desparafinado en frío. Este aceite se utiliza como aromatizante natural en alimentos y es ampliamente empleado en las industrias cosmética y de fragancias por sus propiedades frescas y naturales.
     image: "/images/inducitrica/lemonOil1.webp"
   - title: Cáscara de limón deshidratada
     description: La cáscara deshidratada de limón se utiliza para la obtención de pectinas, que funcionan como estabilizantes en la industria alimentaria y farmacéutica, mejorando la textura y conservación de los productos.
