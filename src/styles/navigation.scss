@@ -12,11 +12,11 @@ input#nav-toggle:checked ~ #nav-menu {
 }
 
 .header {
-  @apply sticky top-0 z-50 py-2 transition-all duration-300 lg:bg-black/25;
+  @apply sticky top-0 z-50 py-2 transition-all duration-300 backdrop-blur lg:bg-black/50;
 
-  &-sticky {
-    @apply bg-black/50 shadow backdrop-blur-sm;
-  }
+  // &-sticky {
+  //   @apply bg-black/50 shadow backdrop-blur-sm;
+  // }
 }
 @media (max-width: 1024px) {
   .header {
