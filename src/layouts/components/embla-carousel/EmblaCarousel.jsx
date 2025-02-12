@@ -14,8 +14,28 @@ import useEmblaCarousel from "embla-carousel-react";
 import img1 from "../../../../public/images/inducitrica/expo1.jpg";
 import img2 from "../../../../public/images/inducitrica/expo2.jpg";
 import img3 from "../../../../public/images/inducitrica/expo3.jpg";
+import img4 from "../../../../public/images/inducitrica/quinta2.jpg";
+import img5 from "../../../../public/images/inducitrica/farm5.jpg";
+import img6 from "../../../../public/images/inducitrica/farm6.jpg";
+import img7 from "../../../../public/images/inducitrica/farm12.jpg";
+import img8 from "../../../../public/images/inducitrica/lemon6.jpg";
+import img9 from "../../../../public/images/inducitrica/lemon1.jpg";
+import img10 from "../../../../public/images/inducitrica/lemon14.jpg";
+import img11 from "../../../../public/images/inducitrica/quinta3.jpg";
 
-const slides = [img1, img2, img3];
+const slides = [
+  img1,
+  img2,
+  img3,
+  img4,
+  img5,
+  img6,
+  img7,
+  img8,
+  img9,
+  img10,
+  img11,
+];
 
 const EmblaCarousel = (props) => {
   const { options } = props;

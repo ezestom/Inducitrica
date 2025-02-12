@@ -7,14 +7,10 @@ const {
 
 <section class="section py-16 lg:py-32">
   <div class="container">
-    <div class="row items-center justify-between">
-      <div class="md:col-5">
-        <h6
-          class="mb-5 text-3xl lg:text-5xl font-bold w-full pb-4"
-          set:html={title}
-        />
-      </div>
-      <!-- {
+    <div class="flex items-center justify-center mx-auto">
+      <h6 class="mb-5 text-3xl lg:text-5xl font-bold pb-4" set:html={title} />
+    </div>
+    <!-- {
         button.enable && (
           <div class="mt-6 text-center md:col-3 md:mt-0 md:text-right">
             <a class="btn btn-primary" href={button.link}>
@@ -23,21 +19,21 @@ const {
           </div>
         )
       } -->
-    </div>
+
     <div class="row mt-14">
       {
         features_list.map((item: any, i: number) => (
           <div class="mb-8 sm:col-6 lg:col-4">
-            <div class="rounded-xl bg-white p-6 shadow-lg lg:p-8">
-              <div class="gradient-number relative inline-block">
+            <div class="rounded-xl bg-white h-full p-6 shadow-lg lg:p-8">
+              <div class="gradient-number relative inline-block pb-6">
                 <span class="bg-gradient text-xl lg:!text-7xl absolute left-1/2 top-1/2 -translate-y-1/2">
                   {i > 8 ? i + 1 : `0${i + 1}`}
                 </span>
               </div>
-              <h6 class="mb-5 mt-8 text-xl lg:text-3xl  font-bold w-full pb-6">
+              <h6 class="py-4 text-xl lg:text-2xl  font-bold w-full ">
                 {item.title}
               </h6>
-              <p>{item.content}</p>
+              <p class="text-pretty">{item.content}</p>
             </div>
           </div>
         ))

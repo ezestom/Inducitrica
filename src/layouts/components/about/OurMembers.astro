@@ -21,11 +21,11 @@ const {
           {
             member_list.map((item: any) => (
               <div class="mb-6 flex flex-col px-6 text-center sm:col-6 lg:col-4 sm:items-center">
-                <div class="member-avatar inline-flex justify-center">
+                <div class="member-avatar inline-flex justify-center items-center rounded-full lg:bg-gradient from-primary to-secondary  lg:shadow-lg p-2">
                   <Image
                     height={112}
                     width={112}
-                    class="rounded-full h-28 w-28 object-cover shadow-lg"
+                    class="rounded-full h-28 w-28 object-cover shadow-lg grayscale"
                     src={item.image}
                     alt=""
                   />

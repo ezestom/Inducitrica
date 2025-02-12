@@ -12,8 +12,10 @@ const HomapageFeature = ({ feature_list }) => {
             className="flex flex-col justify-between rounded-lg bg-white p-8 shadow-lg"
           >
             <div>
-              <h3 className="h4 text-xl font-semibold lg:text-3xl">{item.title}</h3>
-              <p className="text-sm lg:text-xl">{item.content}</p>
+              <h3 className="h4 text-xl font-black lg:text-3xl">
+                {item.title}
+              </h3>
+              <p className="">{item.content}</p>
             </div>
           </div>
         );

@@ -5,32 +5,33 @@ page_title: our structured approach helps you navigate uncertainties
 # perfomance
 perfomance:
   - title: Jugo concentrado de limón
-    description: Este producto es obtenido a partir de la extracción del jugo de limón, mediante un proceso de evaporación del agua que contiene el jugo, hasta obtener un producto con un contenido de sólidos solubles de 400 gramos por litro.
-    image: "/images/inducitrica/farm1.jpg"
+    description: El jugo de limón natural se obtiene mediante un proceso de extracción en máquinas especializadas que exprimirán los limones que llegan a nuestra fábrica de procesamiento. Este jugo se utiliza en la elaboración de diversas bebidas, ofreciendo un sabor fresco y natural.
+    image: "/images/inducitrica/lemonJuice1.jpg"
   - title: Aceite esencial de limón
-    description: El aceite esencial de limón es un aceite esencial cítrico obtenido de la cáscara de limón (Citrus limon). El aceite esencial de limón es un líquido amarillo pálido, con un aroma característico a limón.
-    image: "/images/inducitrica/lemon3.jpg"
+    description: El aceite esencial de limón se obtiene mediante el rallado de la cáscara del limón, seguido de una punción en la fruta. Luego, pasa por un proceso de centrifugación y desparafinado en frío. Este aceite se utiliza como aromatizante natural en alimentos y es ampliamente empleado en las industrias cosmética y de fragancias por sus propiedades frescas y naturales.
+    image: "/images/inducitrica/lemonOil1.webp"
   - title: Cáscara de limón deshidratada
-    description: La cáscara de limón deshidratada es un producto obtenido a partir de la cáscara de limón, mediante un proceso de deshidratación que permite conservar las propiedades organolépticas del limón.
-    image: "/images/inducitrica/barrel1.jpg"
+    description: La cáscara deshidratada de limón se utiliza para la obtención de pectinas, que funcionan como estabilizantes en la industria alimentaria y farmacéutica, mejorando la textura y conservación de los productos.
+    image: "/images/inducitrica/lemonSkin1.jpg"
 # works
 our_works:
-  - title: "Inducítrica es una compañía formada por cuatro empresas productoras de limón, ubicadas en el sur de la provincia de Tucumán, con más de 20 años de experiencia en el sector citrícola."
+  - title: "Somos una empresa líder en la producción de limón, conformada por cuatro compañías con campos estratégicamente ubicados en el sur de la provincia de Tucumán, una de las mejores regiones para el cultivo de cítricos. Con más de 30 años de experiencia en el sector, garantizamos calidad, innovación y compromiso con la excelencia."
     image: "/images/inducitrica/farmer1.jpg"
     list:
+      - Frutucuman S.A.
       - Blazquez S.R.L.
       - Donato Alvarez S.R.L.
       - Dellotte S.A.
       - Sucesores de Salomón S.R.L.
   
-  - title: "Inducítrica es una empresa especializada en la comercialización de productos industriales derivados del limón, los cuales pueden elaborarse tanto en su versión convencional como orgánica."
+  - title: "Estamos especializados en la comercialización de productos industriales derivados del limón, elaborados en versiones convencional y orgánica bajo los más altos estándares de calidad. Garantizamos una trazabilidad total, asegurando un control absoluto en cada etapa del proceso productivo, ya que trabajamos exclusivamente con fruta propia."
     image: "/images/inducitrica/certified1.png"
     list:
       - Jugo concentrado de limón
       - Aceite esencial de limón
       - Cáscara deshidratada de limón
 
-  - title: "Además de ser productores pioneros en la producción de limón en el sur de la provincia, Inducítrica desarrolla otras actividades agrícolas como caña de azúcar, soja, granos, arándanos, naranjas, palta, entre otras."
+  - title: "Somos una empresa comprometida con el impacto ambiental, realizando análisis de ciclo de vida (LCA) de nuestra producción. Además de ser pioneros en la producción de limón en el sur de la provincia de Tucumán, también desarrollamos otras actividades agrícolas como: "
     image: "/images/inducitrica/certified2.png"
     list:
       - Caña de azúcar
@@ -40,18 +41,13 @@ our_works:
       - Naranjas
       - Palta
 
-  - title: "En 2017, los productores firmaron un contrato de fason con la empresa citrícola más grande de Argentina, SA San Miguel, asegurando una alianza comercial estratégica de largo plazo."
-    image: "/images/inducitrica/certified4.png"
+  - title: "Con un crecimiento constante, Frutucuman S.A. se ha consolidado como la exportadora más importante de frutas de Argentina, con planes de expansión que nos permitirán alcanzar una producción de 70.000 toneladas en los próximos 5 a 10 años."
+    image: "/images/inducitrica/farm7.jpg"
     list:
       - Alianza comercial con SA San Miguel
       - Horizonte de crecimiento y expansión
       - Inversión en tierras
 
-  - title: "Con el crecimiento y la proyección de la empresa, Frutucuman S.A. se ha consolidado como la exportadora más importante de frutas de Argentina, con planes de expansión y una gran proyección en la producción."
-    image: "/images/inducitrica/certified3.png"
-    list:
-      - Frutucuman S.A.
-      - Exportadora líder en Argentina
-      - Proyección de producción internacional
+
 
 ---

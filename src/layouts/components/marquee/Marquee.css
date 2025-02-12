@@ -1,8 +1,7 @@
-/*
-     *  This is the marquee animation styles. 
-     *  Instead of adding this CSS you may wish to implement in your tailwind config. 
-     *  Learn more in the marquee Tailwind Config section
-     */
+#brand {
+  /* Make the images black and stand out */
+  filter: grayscale(100%) brightness(1);
+}
 @keyframes marquee {
   0% {
     transform: translateX(0);
@@ -12,7 +11,7 @@
   }
 }
 .animate-marquee {
-  animation: marquee 100s linear infinite;
+  animation: marquee 150s linear infinite;
 }
 
 /*

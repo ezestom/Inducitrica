@@ -1,7 +1,7 @@
 ---
 banner:
   title: "Inducítrica"
-  subtitle: "Líderes en la producción de cítricos"
+  subtitle: "Líderes en cítricos, comprometidos con la excelencia y el desarrollo sostenible"
   image: /images/inducitrica/lemon14.jpg
   button:
     label: Contacta con nuestro equipo
