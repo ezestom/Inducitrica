@@ -13,13 +13,13 @@
       "url": "/contact"
     },
     {
-      "name": "Datos",
+      "name": "Cultivos",
       "url": "/carrers"
     },
     {
-      "name": "Contenido",
-      "url": "",
-      "hasChildren": true,
+      "name": "Registros",
+      "url": "changelog",
+      "hasChildren": false,
       "children": [
         {
           "name": "Últimos registros",

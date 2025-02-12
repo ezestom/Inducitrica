@@ -5,7 +5,9 @@ const { page_data } = Astro.props || {};
 const { title, index_title, page_title, slug, content } = page_data || {};
 ---
 
-<div class="text-center rounded-t-3xl py-12 shadow" id="hero-sections">
+<div
+  class="text-center rounded-t-3xl py-12 shadow lg:min-h-[50vh]"
+  id="hero-sections">
   <ul
     class="breadcrumb inline-flex h-8 items-center justify-center space-x-2 rounded-3xl bg-theme-light px-4 py-2">
     <li class="leading-none text-dark flex items-center justify-center">
@@ -40,9 +42,9 @@ const { title, index_title, page_title, slug, content } = page_data || {};
       }
     </li>
   </ul>
-  <div class="w-full text-balance lg:px-24 lg:py-12">
+  <div class="w-full text-balance lg:px-24 lg:py-6">
     <h6
-      class="font-black text-[2rem] pt-4 lg:!text-[4vw] text-white"
+      class="font-black text-[2rem] lg:!text-[4vw] text-white"
       set:html={markdownify(
         page_data?.page_title ? page_data?.page_title : page_data?.title
       )}
