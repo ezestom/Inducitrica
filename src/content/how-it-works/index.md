@@ -18,10 +18,9 @@ our_works:
   - title: "Somos una empresa líder en la producción de limón, conformada por cuatro compañías con campos estratégicamente ubicados en el sur de la provincia de Tucumán, una de las mejores regiones para el cultivo de cítricos. Con más de 30 años de experiencia en el sector, garantizamos calidad, innovación y compromiso con la excelencia."
     image: "/images/inducitrica/lemon.jpg"
     list:
-      - Frutucuman S.A.
       - Blazquez S.R.L.
       - Donato Alvarez S.R.L.
-      - Dellotte S.A.
+      - Delotte S.A.
       - Sucesores de Salomón S.R.L.
   
   - title: "Estamos especializados en la comercialización de productos industriales derivados del limón, elaborados en versiones convencional y orgánica bajo los más altos estándares de calidad. Garantizamos una trazabilidad total, asegurando un control absoluto en cada etapa del proceso productivo, ya que trabajamos exclusivamente con fruta propia."
@@ -41,10 +40,9 @@ our_works:
       - Naranjas
       - Palta
 
-  - title: "Con un crecimiento constante, Frutucuman S.A. se ha consolidado como la exportadora más importante de frutas de Argentina, con planes de expansión que nos permitirán alcanzar una producción de 70.000 toneladas en los próximos 5 a 10 años."
+  - title: "Con un crecimiento constante, Inducítrica se ha consolidado como la exportadora más importante de frutas de Argentina, con planes de expansión que nos permitirán alcanzar una producción de 70.000 toneladas en los próximos 5 a 10 años."
     image: "/images/inducitrica/farm7.jpg"
     list:
-      - Inducítrica S.A.
       - Horizonte de crecimiento y expansión
       - Relaciones duraderas con socios internos y externos
       - Inversión en tierras
