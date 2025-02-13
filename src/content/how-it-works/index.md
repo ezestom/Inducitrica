@@ -30,7 +30,7 @@ our_works:
       - Aceite esencial de limón
       - Cáscara deshidratada de limón
 
-  - title: "Somos una empresa comprometida con el impacto ambiental, realizando análisis de ciclo de vida (LCA) de nuestra producción. Además de ser pioneros en la producción de limón en el sur de la provincia de Tucumán, también desarrollamos otras actividades agrícolas como: "
+  - title: "Somos una empresa comprometida con el impacto ambiental, realizando análisis de ciclo de vida (LCA- ISO 14040/44) de nuestra producción. Además de ser pioneros en la producción de limón en el sur de la provincia de Tucumán, también desarrollamos otras actividades agrícolas como: "
     image: "/images/inducitrica/certified2.png"
     list:
       - Caña de azúcar

@@ -75,6 +75,6 @@ members:
 
 Inducítrica es líder en la producción de limón, con más de 30 años de experiencia y campos estratégicamente ubicados en el sur de Tucumán, una de las mejores zonas para el cultivo de cítricos. Nos especializamos en la comercialización de productos derivados del limón, como jugo concentrado, aceite esencial y cáscara deshidratada, en versiones convencional y orgánica, garantizando trazabilidad total y control absoluto del proceso, gracias a nuestra fruta propia.
 
-Comprometidos con la sostenibilidad, realizamos análisis de ciclo de vida (LCA) y diversificamos nuestras actividades agrícolas, incluyendo caña de azúcar, soja, granos, arándanos, naranjas y palta.
+Comprometidos con la sostenibilidad, realizamos análisis de ciclo de vida (LCA- ISO 14040/44) y diversificamos nuestras actividades agrícolas, incluyendo caña de azúcar, soja, granos, arándanos, naranjas y palta.
 
 Con una sólida proyección de crecimiento, Inducítrica se ha consolidado como la principal exportadora de frutas de Argentina, con planes de expansión para alcanzar 70.000 toneladas en los próximos 5 a 10 años.

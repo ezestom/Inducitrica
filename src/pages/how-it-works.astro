@@ -13,7 +13,7 @@ const page_data = {
 };
 ---
 
-<section>
+<section class="lg:px-8">
   <div class="container px-0 lg:!px-2 pt-16">
     {
       our_works.map((item: any, index: number) => (
@@ -38,9 +38,9 @@ const page_data = {
 
           {/* Caja de imagen con el segundo gradiente */}
           <div
-            class={`flex-shrink-0 lg:w-full rounded-3xl from-[#e6f6ee]/50 to-[#8bcfad]/50 p-6 ${index % 2 === 0 ? "order-2" : "order-1"}`}>
+            class={`flex-shrink-0 mx-auto  rounded-3xl from-[#e6f6ee]/50 to-[#8bcfad]/50 p-6 ${index % 2 === 0 ? "order-2" : "order-1"}`}>
             <button
-              class="open-dialog-button hover:cursor-crosshair "
+              class="open-dialog-button hover:cursor-crosshair mx-auto hover:drop-shadow-lg transition "
               data-index={index}>
               <img
                 src={item.image}
@@ -83,7 +83,7 @@ const page_data = {
 </section>
 
 <script is:inline>
-  document.addEventListener("DOMContentLoaded", function () {
+  document.addEventListener("DOMContentLoaded", () => {
     // Abrir el dialog cuando se haga clic en una imagen
     const openButtons = document.querySelectorAll(".open-dialog-button");
     openButtons.forEach((button) => {
@@ -111,7 +111,7 @@ const page_data = {
   });
 </script>
 
-<section class="page-hero my-32">
+<section class="page-hero my-32 lg:px-8">
   <div class="container">
     <div class="mx-auto text-center"></div>
     <div class="flex-wrap grid gap-8 lg:grid-cols-3">

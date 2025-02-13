@@ -4,11 +4,11 @@ const { counter } = Astro.props;
 
 <div class="counter mt-16">
   <div
-    class="row mx-0 rounded-[20px] bg-white px-10 shadow-lg lg:py-10 flex justify-around">
+    class="row mx-0 rounded-[20px] bg-white lg:px-10 shadow-lg lg:py-10 flex justify-around">
     {
       counter.map((item: any) => (
-        <div class="border-border  px-10 py-10 text-center lg:py-0  w-auto">
-          <h2 class="">
+        <div class="border-border lg:px-10 py-10 text-center lg:py-0  w-auto">
+          <h2 class="text-xl lg:text-2xl font-bold flex items-center justify-center">
             <span class={"text-primary"}>+</span>
             <span class="count" aria-valuenow={item.number}>
               0
