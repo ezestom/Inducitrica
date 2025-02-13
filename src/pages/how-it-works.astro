@@ -17,7 +17,9 @@ const page_data = {
   <div class="container px-0 lg:!px-2 pt-16">
     {
       our_works.map((item: any, index: number) => (
-        <div class="grid grid-cols-1 lg:grid-cols-2 py-4 gap-8">
+        <div
+          class="grid grid-cols-1 lg:grid-cols-2 py-4 gap-8"
+          data-key={index}>
           {/* Caja de contenido con el primer gradiente */}
           <div
             class={`flex flex-col bg-gradient-to-t from-[#e6f6ee]/50 to-[#8bcfad]/50 lg:rounded-3xl p-8 lg:p-12 h-full w-full ${index % 2 === 0 ? "lg:order-1" : "lg:order-2"}`}>
@@ -37,17 +39,77 @@ const page_data = {
           {/* Caja de imagen con el segundo gradiente */}
           <div
             class={`flex-shrink-0 lg:w-full rounded-3xl from-[#e6f6ee]/50 to-[#8bcfad]/50 p-6 ${index % 2 === 0 ? "order-2" : "order-1"}`}>
-            <img
-              src={item.image}
-              alt={`Imagen de ${item.title}`}
-              class="mx-auto h-auto rounded-3xl object-cover drop-shadow-lg max-h-[450px]"
-            />
+            <button
+              class="open-dialog-button hover:cursor-crosshair "
+              data-index={index}>
+              <img
+                src={item.image}
+                alt={`Imagen de ${item.title}`}
+                class="mx-auto h-auto rounded-3xl object-cover drop-shadow-lg max-h-[450px] "
+              />
+            </button>
+            {/* Dialog que se abrirá al hacer click */}
+            <dialog
+              id={`dialog-${index}`}
+              class="dialog w-full h-full m-auto overflow-hidden bg-transparent">
+              <aside
+                class={`group flex items-center justify-center rounded-3xl mx-auto h-full w-full transition-all bg-black/50 !backdrop-blur gap-4 relative py-4 shadow-2xl shadow-gray-600/10`}>
+                <button class="close-dialog-button h-8 w-8 absolute top-4 right-4 text-white hover:scale-105 transition close-dialog z-20 ">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M6 18L18 6M6 6l12 12"
+                    />
+                  </svg>
+                </button>
+                <img
+                  src={item.image}
+                  alt={`Imagen ampliada de ${item.title}`}
+                  class="rounded-3xl max-h-full w-auto "
+                />
+              </aside>
+            </dialog>
           </div>
         </div>
       ))
     }
   </div>
 </section>
+
+<script is:inline>
+  document.addEventListener("DOMContentLoaded", function () {
+    // Abrir el dialog cuando se haga clic en una imagen
+    const openButtons = document.querySelectorAll(".open-dialog-button");
+    openButtons.forEach((button) => {
+      button.addEventListener("click", (e) => {
+        const index = e.target.closest("button").getAttribute("data-index");
+        const dialog = document.getElementById(`dialog-${index}`);
+        if (dialog) {
+          dialog.showModal();
+          document.body.style.overflow = "hidden";
+        }
+      });
+    });
+
+    // Cerrar el dialog cuando se haga clic en el botón de cerrar
+    const closeButtons = document.querySelectorAll(".close-dialog-button");
+    closeButtons.forEach((button) => {
+      button.addEventListener("click", (e) => {
+        const dialog = e.target.closest("dialog");
+        if (dialog) {
+          dialog.close();
+          document.body.style.overflow = "auto";
+        }
+      });
+    });
+  });
+</script>
 
 <section class="page-hero my-32">
   <div class="container">

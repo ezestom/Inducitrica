@@ -1,3 +1,5 @@
+import animations from "@midudev/tailwind-animations";
+
 const theme = require("./src/config/theme.json");
 
 let font_base = Number(theme.fonts.font_size.base.replace("px", ""));
@@ -65,6 +67,7 @@ module.exports = {
     },
   },
   plugins: [
+    animations,
     require("@tailwindcss/typography"),
     require("@tailwindcss/forms"),
     require("tailwind-bootstrap-grid")({

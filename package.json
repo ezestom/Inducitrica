@@ -17,6 +17,7 @@
     "@astrojs/rss": "^4.0.9",
     "@astrojs/sitemap": "^3.2.1",
     "@astrojs/tailwind": "^5.1.2",
+    "@midudev/tailwind-animations": "^0.1.0",
     "alpinejs": "^3.14.8",
     "astro": "^4.16.9",
     "astro-auto-import": "^0.4.4",
