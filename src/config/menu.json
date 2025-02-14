@@ -11,21 +11,6 @@
     {
       "name": "Contacto",
       "url": "/contact"
-    },
-    {
-      "name": "Cultivos",
-      "url": "/carrers"
-    },
-    {
-      "name": "Registros",
-      "url": "changelog",
-      "hasChildren": false,
-      "children": [
-        {
-          "name": "Últimos registros",
-          "url": "/changelog"
-        }
-      ]
     }
   ],
 
@@ -37,14 +22,6 @@
     {
       "name": "Contacto",
       "url": "/contact"
-    },
-    {
-      "name": "Datos",
-      "url": "/carrers"
-    },
-    {
-      "name": "Últimos registros",
-      "url": "/changelog"
     }
   ]
 }

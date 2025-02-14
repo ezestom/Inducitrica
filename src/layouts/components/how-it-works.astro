@@ -38,6 +38,7 @@ const page_data = {
 
           {/* Caja de imagen con el segundo gradiente */}
           <div
+            id="card"
             class={`flex-shrink-0 mx-auto  rounded-3xl from-[#e6f6ee]/50 to-[#8bcfad]/50 p-6 ${index % 2 === 0 ? "order-2" : "order-1"}`}>
             <button
               class="open-dialog-button hover:cursor-crosshair mx-auto hover:drop-shadow-lg transition "
@@ -146,3 +147,21 @@ const page_data = {
     </div>
   </div>
 </section>
+
+<style>
+  #card {
+    animation: reveal2 linear both;
+    animation-timeline: view();
+    animation-range: entry 10% cover 30%;
+  }
+  @keyframes reveal2 {
+    0% {
+      opacity: 0;
+      transform: translateY(25%) scale(0.95);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+  }
+</style>

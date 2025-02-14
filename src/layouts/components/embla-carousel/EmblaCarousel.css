@@ -4,22 +4,24 @@
   --slide-spacing: 1rem;
   --slide-size: 100%;
 }
-.embla__viewport {
-  overflow: hidden;
-  mask-image: linear-gradient(
-    to right,
-    transparent 0px,
-    black 10px,
-    black calc(100% - 10px),
-    transparent 100%
-  );
-  -webkit-mask-image: linear-gradient(
-    to right,
-    transparent 0px,
-    black 10px,
-    black calc(100% - 10px),
-    transparent 100%
-  );
+@media (min-width: 1024px) {
+  .embla__viewport {
+    overflow: hidden;
+    mask-image: linear-gradient(
+      to right,
+      transparent 0px,
+      black 10px,
+      black calc(100% - 10px),
+      transparent 100%
+    );
+    -webkit-mask-image: linear-gradient(
+      to right,
+      transparent 0px,
+      black 10px,
+      black calc(100% - 10px),
+      transparent 100%
+    );
+  }
 }
 .embla__container {
   display: flex;

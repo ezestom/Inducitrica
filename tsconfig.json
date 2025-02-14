@@ -11,6 +11,7 @@
     "isolatedModules": true,
     "incremental": true,
     "allowSyntheticDefaultImports": true,
+    "lib": ["es2021"],
     "paths": {
       "@/components/*": ["./src/layouts/components/*"],
       "@/shortcodes/*": ["./src/layouts/shortcodes/*"],

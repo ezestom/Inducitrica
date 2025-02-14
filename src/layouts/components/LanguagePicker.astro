@@ -1,0 +1,61 @@
+---
+import { languages } from "../../i18n/ui";
+import {
+  getRouteFromUrl,
+  useTranslatedPath,
+  getLangFromUrl,
+} from "../../i18n/utils";
+
+const route = getRouteFromUrl(Astro.url);
+const lang = getLangFromUrl(Astro.url);
+const translatePath = useTranslatedPath(lang);
+
+const currentLocaleData = languages[lang];
+const otherLocales = Object.values(languages).filter(
+  (locale) => locale.code !== lang
+);
+---
+<div class="z-20 w-fit">
+  <div
+    class="font-base bg-black/50 hover:bg-black/50 backdrop-blur group rounded-3xl text-base font-semibold transition-all">
+    <button
+      type="button"
+      class="inline-flex btn btn-white btn-sm items-center justify-center backdrop-blur text-primary-950 shadow ring-primary-950 transition hover:bg-primary-200/75 focus:outline-none"
+      aria-expanded="true"
+      aria-haspopup="true">
+      <!-- <currentLocaleData.flag /> -->
+      {currentLocaleData.name}
+    </button>
+    <ul
+      class="group-hover:animate-fade-down group-hover:animate-duration-200 group-flex-col absolute hidden w-full gap-1 pt-1 group-hover:flex group-hover:flex-col">
+      {
+        otherLocales.map((locale) => (
+          <a
+        class="inline-flex btn btn-white btn-sm items-center justify-center rounded-3xl text-primary-950 shadow ring-primary-950 transition hover:bg-primary-200/75 focus:outline-none"
+        href={locale.code === "en" 
+          ? `/en/home`
+          : `/`}
+          >
+        {locale.name}
+          </a>
+        ))
+      }
+    </ul>
+  </div>
+</div>
+
+
+<script>
+  const changeLanguage = (e: any) => {
+    e.preventDefault();
+    const url = e.target.href;
+    window.location = url;
+  };
+
+  // agregar el evento click a los elementos de la lista
+  const languageBtn = document.getElementById("language-btn");
+  const languageBtnItems = languageBtn?.querySelectorAll("a");
+  languageBtnItems?.forEach((item) => {
+    item.addEventListener("click", changeLanguage);
+  });
+</script>

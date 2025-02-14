@@ -61,7 +61,7 @@ const EmblaCarousel = (props) => {
       <div className="embla__viewport" ref={emblaRef}>
         <div className="embla__container">
           {slides.map((img, index) => (
-            <div className="embla__slide" key={index}>
+            <div className="embla__slide  min-w-[450px] max-w-[750px] object-center" key={index}>
               <div className="embla__slide__number rounded-3xl overflow-hidden ">
                 {" "}
                 <img

@@ -36,6 +36,7 @@
     "remark-collapse": "^0.1.2",
     "remark-toc": "^9.0.0",
     "shufflejs": "^6.1.1",
+    "sonner": "^1.7.4",
     "swiper": "^11.1.14"
   },
   "devDependencies": {

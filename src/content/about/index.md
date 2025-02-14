@@ -56,20 +56,25 @@ members:
   title: "Equipo"
   description: "Conoce a las personas que hacen posible nuestra empresa."
   member_list:
-    - name: Anotonio Jalil
+    - name: Antonio Jalil
       field: President
+      study: "Abogado en la Universidad de Buenos Aires (UBA)."
       image: "/images/users/antonio.png"
     - name: Ezequiel Almada
+      study: "Máster en Finanzas de la Universidad de San Andrés."
       field: Vice President
       image: "/images/users/ezequiel.jpg"
     - name: José Cebe
+      study: "Abogado y Mediador, Magíster en Derecho Corporativo por la Universidad Austral"
       field: Director
       image: "/images/users/jose.jpg"
     - name: Ana Mendilharzu
-      field: Ceo Blazquez
+      study: "Licenciado en Administración de Empresas - MBA en la Universidad de San Andrés."
+      field: CEO Blazquez
       image: "/images/users/ana.jpg"
     - name: Diego Decima
-      field: Ceo Inducítrica
+      study: "MBA en la Universidad de Valparaíso, Chile, y especialización en Negociación por la Fundación Magíster."
+      field: CEO Inducítrica
       image: "/images/users/diego.png"
 ---
 

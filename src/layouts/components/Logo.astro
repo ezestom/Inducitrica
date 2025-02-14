@@ -17,9 +17,7 @@ const {
 } = config.site;
 ---
 
-<a
-  href="/"
-  class="navbar-brand block transition-transform ease-in-out active:scale-95">
+<button id="scroll" class="navbar-brand block transition-transform ease-in-out">
   <Image
     id="logo"
     width={logo_width.replace("px", "") * 2}
@@ -28,10 +26,20 @@ const {
     alt={title}
     class="w-auto h-14 drop-shadow-sm"
   />
-</a>
+</button>
 
 <style>
   #logo {
-    filter:drop-shadow(0 0 0.5rem rgba(255, 255, 255, .5));
+    filter: drop-shadow(0 0 0.5rem rgba(255, 255, 255, 0.25));
   }
 </style>
+
+<script is:inline>
+  const scroll = document.getElementById("scroll");
+  scroll?.addEventListener("click", () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  });
+</script>

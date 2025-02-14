@@ -8,8 +8,8 @@ const { counter } = Astro.props;
     {
       counter.map((item: any) => (
         <div class="border-border lg:px-10 py-10 text-center lg:py-0  w-auto">
-          <h2 class="text-xl lg:text-2xl font-bold flex items-center justify-center">
-            <span class={"text-primary"}>+</span>
+          <h2 class="text-xl lg:text-3xl gap-x-2 font-bold flex items-center justify-center">
+            <span class={"text-primary !text-4xl"}>+</span>
             <span class="count" aria-valuenow={item.number}>
               0
             </span>
