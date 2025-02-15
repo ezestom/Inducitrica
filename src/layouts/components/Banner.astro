@@ -7,14 +7,15 @@ const { title, subtitle, button, image, content } = banner;
 <section class="hero banner relative h-screen" id="hero">
   <div class="inner">
     <div class="copy">
-      <div class="container text-white absolute m-auto bottom-0 right-0 left-0">
+      <div
+        class="container text-white absolute m-auto bottom-0 right-0 left-0 lg:translate-y-10">
         <h1
-          class="font-black text-[4rem] lg:!text-[10vw]"
+          class="font-black text-[5rem] lg:!text-[10vw]"
           set:html={markdownify(title)}
         />
-        <hr class="mx-auto w-[67%]" />
+        <hr class="mx-auto w-[375px] lg:w-[48vw]" />
         <h5
-          class="mt-4 font-bold text-base !text-white text-xl lg:!text-4xl text-pretty max-w-[38ch] mx-auto"
+          class="mt-4 font-bold !text-white text-base lg:!text-[1.94vw] text-pretty max-w-[38ch] mx-auto"
           set:html={markdownify(subtitle)}
         />
       </div>

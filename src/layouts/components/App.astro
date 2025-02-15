@@ -1,22 +1,23 @@
 ---
 import Base from "@/layouts/Base.astro";
-import Banner from "@/layouts/components/Banner.astro";
-import Cta from "@/layouts/partials/Cta.astro";
+import BannerEn from "@/layouts/components/BannerEn.astro";
+import CtaEn from "@/layouts/partials/CtaEn.astro";
 import { getEntryBySlug } from "astro:content";
-import HowItWorks from "@/layouts/components/how-it-works.astro";
+import HowItWorksEn from "@/layouts/components/how-it-worksEn.astro";
 import { Marquee } from "@/layouts/components/marquee/Marquee.jsx";
 import KeyFeatures from "@/layouts/components/KeyFeatures.astro";
+import KeyFeaturesEn from "./KeyFeaturesEn.astro";
 
-const homepage = await getEntryBySlug("homepage", "index");
+const homepage = await getEntryBySlug("homepageEn", "index");
 const { banner, key_features, service, testimonial } = homepage.data;
 ---
 
 <Base>
   <!-- banner -->
-  <Banner banner={banner} />
+  <BannerEn banner={banner} />
   <Marquee client:load />
   <!-- how it works -->
-  <HowItWorks />
+  <HowItWorksEn />
   <!-- key features -->
   <KeyFeatures key_features={key_features} />
   <!-- service -->
@@ -24,5 +25,5 @@ const { banner, key_features, service, testimonial } = homepage.data;
   <!-- testimonial -->
   <!-- <Testimonial testimonial={testimonial} /> -->
   <!-- call to action -->
-  <Cta />
+  <CtaEn />
 </Base>

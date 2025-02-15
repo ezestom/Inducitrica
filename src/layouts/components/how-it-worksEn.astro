@@ -4,7 +4,7 @@ import Cta from "@/layouts/partials/Cta.astro";
 import { getEntryBySlug } from "astro:content";
 import { AiFillCheckCircle } from "react-icons/ai";
 
-const how_it_works = await getEntryBySlug("how-it-works", "index");
+const how_it_works = await getEntryBySlug("how-it-works-en", "index");
 const { perfomance, our_works } = how_it_works.data;
 const { title, subtitle } = how_it_works.data;
 // const page_data = {
@@ -117,7 +117,7 @@ const { title, subtitle } = how_it_works.data;
     <div class="mx-auto text-center"></div>
     <div class="flex-wrap grid gap-8 lg:grid-cols-3">
       {
-        perfomance.map((item: any, i: number) => (
+        perfomance?.map((item: any, i: number) => (
           <div
             id="card"
             class={`relative flex flex-col justify-between rounded-xl overflow-hidden bg-white shadow-lg  ${

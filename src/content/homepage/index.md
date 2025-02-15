@@ -1,7 +1,7 @@
 ---
 banner:
   title: "Inducítrica"
-  subtitle: "Líderes en cítricos, comprometidos con la excelencia y el desarrollo sostenible"
+  subtitle: "Líderes en cítricos, comprometidos con la excelencia y el desarrollo sostenible."
   image: /images/inducitrica/lemon14.jpg
   button:
     label: Contacta con nuestro equipo
@@ -24,7 +24,7 @@ banner:
 
 ##key features
 key_features:
-  title: "Proyecciones 2031"
+  title: "Proyecciones de la compañía para 2031"
   description: Viendo esta proyecciones y el crecimiento del grupo, esto requiere la necesidad de poder montar una fabrica para industrializar su limón propio. Hoy el grupo cuenta con 35.000 Tn de fruta propia y la proyección de producción superara las 60.000 Tn en los próximos 5 años, esto lleva a solicitarles, poder entablar conversaciones con el objeto de  obtener un contrato de comercialización y aprovisionamiento con Coca Cola Company  
 
   feature_list:
