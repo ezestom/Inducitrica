@@ -26,3 +26,8 @@
     display: none;
   }
 }
+@media (width < 800px) {
+  .animate-marquee {
+    animation: marquee 25s linear infinite;
+  }
+}

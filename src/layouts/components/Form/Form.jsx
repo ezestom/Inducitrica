@@ -17,7 +17,6 @@ export function Form({
   send,
   message_2,
 }) {
-  const [dialog, setDialog] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
 
   // const captcha = useRef(null);
@@ -87,10 +86,11 @@ export function Form({
 
   return (
     <div className="relative h-full w-full ">
+      <Toaster />
       <form
         onSubmit={handleSubmit}
         method="POST"
-        action="https://formsubmit.co/ezequielstom@gmail.com"
+        action="https://formsubmit.co/diemaxdecima@gmail.com"
         className="mt-2 mx-2"
       >
         {/* Indicador de carga */}
@@ -99,7 +99,6 @@ export function Form({
             <span className="loader"></span>
           </div>
         )}
-        <Toaster />
 
         {/* Campos ocultos necesarios para el backend */}
         <input type="hidden" name="_cc" value="ezequielstom@gmail.com" />
@@ -209,9 +208,7 @@ export function Form({
             {send}
           </button>
 
-          <p className="text-sm text-gray-700 mt-4 text-center">
-            {message_2}
-          </p>
+          <p className="text-sm text-gray-700 mt-4 text-center">{message_2}</p>
         </div>
       </form>
     </div>

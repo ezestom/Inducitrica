@@ -16,7 +16,10 @@ const { copyright, location, email, phone1, phone2, footer_description } =
       <div class="col-12 mt-12 md:col-6 lg:col-3 text-start">
         <h6>Links</h6>
 
-        <Social source={social} className="social-icons mt-4 lg:mt-6" />
+        <Social
+          source={social}
+          className="social-icons mt-4 lg:mt-6 text-gray-800 "
+        />
       </div>
 
       <div class="col-12 mt-12 md:col-6 lg:col-3 text-start">
@@ -28,11 +31,11 @@ const { copyright, location, email, phone1, phone2, footer_description } =
               >{email}</a
             >
           </li>
-          <li>
+          <!-- <li>
             <a class="hover:text-primary hover:underline" href={`tel:${phone1}`}
               >{phone1}</a
             >
-          </li>
+          </li> -->
           <li>
             <a class="hover:text-primary hover:underline" href={`tel:${phone2}`}
               >{phone2}</a

@@ -3,13 +3,10 @@ import { markdownify } from "@/lib/utils/textConverter";
 const { gallery } = Astro.props;
 const { title, images } = gallery;
 import EmblaCarousel from "../../components/embla-carousel/EmblaCarousel.jsx";
-
 ---
 
-<section class="section py-16">
-  <div class="container">
-    <div class="relative max-w-screen">
-      <EmblaCarousel client:idle />
-    </div>
+<section class="section py-16 max-w-screen overflow-hidden">
+  <div class="relative max-w-screen">
+    <EmblaCarousel client:idle />
   </div>
 </section>

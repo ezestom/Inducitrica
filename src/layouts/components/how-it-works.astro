@@ -51,7 +51,7 @@ const { title, subtitle } = how_it_works.data;
             </button>
             {/* Dialog que se abrirá al hacer click */}
             <dialog
-              id={`dialog-${index}`}
+              data-index={index}
               class="dialog w-full h-full m-auto overflow-hidden bg-transparent">
               <aside
                 class={`group flex items-center justify-center rounded-3xl mx-auto h-full w-full transition-all bg-black/50 !backdrop-blur gap-4 relative py-4 shadow-2xl shadow-gray-600/10`}>
@@ -85,29 +85,21 @@ const { title, subtitle } = how_it_works.data;
 
 <script is:inline>
   document.addEventListener("DOMContentLoaded", () => {
-    // Abrir el dialog cuando se haga clic en una imagen
-    const openButtons = document.querySelectorAll(".open-dialog-button");
-    openButtons.forEach((button) => {
-      button.addEventListener("click", (e) => {
-        const index = e.target.closest("button").getAttribute("data-index");
-        const dialog = document.getElementById(`dialog-${index}`);
-        if (dialog) {
-          dialog.showModal();
-          document.body.style.overflow = "hidden";
-        }
-      });
-    });
+    document.addEventListener("click", (event) => {
+      const target = event.target.closest("button");
 
-    // Cerrar el dialog cuando se haga clic en el botón de cerrar
-    const closeButtons = document.querySelectorAll(".close-dialog-button");
-    closeButtons.forEach((button) => {
-      button.addEventListener("click", (e) => {
-        const dialog = e.target.closest("dialog");
-        if (dialog) {
-          dialog.close();
-          document.body.style.overflow = "auto";
-        }
-      });
+      if (!target) return;
+
+      if (target.matches(".open-dialog-button")) {
+        const index = target.dataset.index;
+        const dialog = document.querySelector(`dialog[data-index="${index}"]`);
+        if (dialog) dialog.showModal();
+      }
+
+      if (target.matches(".close-dialog-button")) {
+        const dialog = target.closest("dialog");
+        if (dialog) dialog.close();
+      }
     });
   });
 </script>

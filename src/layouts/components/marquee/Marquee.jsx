@@ -23,7 +23,7 @@ export function Marquee() {
         <div x-ref="content" class="flex animate-marquee">
           <div
             x-ref="item"
-            class="flex items-center justify-around flex-shrink-0 w-full py-2 space-x-8 text-gray-800 gap-x-48"
+            class="flex items-center justify-around flex-shrink-0 w-full py-2 space-x-8 text-gray-800  lg:gap-x-36"
           >
             <img id="brand" src={logo1.src} alt="Delotte" class="h-12 drop-shadow-sm" />
             <img id="brand" src={logo2.src} alt="Blazquez" class="h-12 drop-shadow-sm" />

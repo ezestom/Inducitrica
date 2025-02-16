@@ -2,9 +2,8 @@
 title: How It Works
 page_title: Our structured approach helps you navigate uncertainties
 
-# performance
-
-performance:
+# perfomance
+perfomance:
   - title: Lemon Concentrate Juice
     description: Natural lemon juice is obtained through an extraction process in specialized machines that squeeze the lemons arriving at our processing factory. This juice is used in the preparation of various beverages, offering a fresh and natural flavor.
     image: "/images/inducitrica/lemonJuice1.jpg"
@@ -14,9 +13,7 @@ performance:
   - title: Dehydrated Lemon Peel
     description: Dehydrated lemon peel is used to obtain pectin, which acts as a stabilizer in the food and pharmaceutical industries, improving the texture and preservation of products.
     image: "/images/inducitrica/lemonSkin1.jpg"
-
 # works
-
 our_works:
   - title: "We are a leading company in lemon production, made up of four companies with strategically located fields in the south of the Tucumán province, one of the best regions for citrus cultivation. With over 30 years of experience in the sector, we guarantee quality, innovation, and a commitment to excellence."
     image: "/images/inducitrica/lemon.jpg"
