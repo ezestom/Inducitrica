@@ -48,7 +48,8 @@ const { pathname } = Astro.url;
 ---
 
 <header
-  class="header fixed top-0 right-0 left-0 xl:max-w-[1400px] xl:rounded-3xl xl:mt-2 mx-auto w-full row justify-center shadow flex px-2" id="top">
+  class="header fixed top-0 right-0 left-0 xl:max-w-[1400px] xl:rounded-3xl mx-auto w-full row justify-center shadow flex px-2"
+  id="top">
   <nav class="navbar container">
     <!-- logo -->
     <div class="order-0 flex-1 lg:flex-none">
@@ -111,6 +112,22 @@ const { pathname } = Astro.url;
     </div>
   </nav>
 </header>
+
+<style>
+  header {
+    animation: marginTop linear both;
+    animation-timeline: scroll();
+    animation-range: 0 50px;
+  }
+  @keyframes marginTop {
+    from {
+      margin-top: 0;
+    }
+    to {
+      margin-top: 0.5rem;
+    }
+  }
+</style>
 
 <script is:inline>
   document.querySelectorAll(".dropdown-button").forEach((button) => {

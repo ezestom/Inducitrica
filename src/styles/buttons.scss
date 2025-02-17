@@ -18,7 +18,7 @@
 }
 
 .btn-white {
-  @apply  rounded-[50px] border-white bg-white text-center capitalize text-dark shadow-lg hover:shadow hover:scale-105 transition;
+  @apply  rounded-3xl border-gray-200  bg-white text-center capitalize text-dark shadow-lg border hover:scale-105 active:scale-95 transition;
 }
 
 .btn-sm {
