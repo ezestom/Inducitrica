@@ -21,7 +21,7 @@ our_works:
       - Blazquez S.R.L.
       - Donato Alvarez S.R.L.
       - Delotte S.A.
-      - Sucesores de Salomón S.R.L.
+      - Sucesores de Salomón Jalil S.R.L.
   
   - title: "We specialize in the marketing of industrial products derived from lemons, produced in both conventional and organic versions under the highest quality standards. We guarantee total traceability, ensuring full control at every stage of the production process, as we work exclusively with our own fruit."
     image: "/images/inducitrica/certified1.png"

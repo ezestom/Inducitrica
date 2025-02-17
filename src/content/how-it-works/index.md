@@ -21,7 +21,7 @@ our_works:
       - Blazquez S.R.L.
       - Donato Alvarez S.R.L.
       - Delotte S.A.
-      - Sucesores de Salomón S.R.L.
+      - Sucesores de Salomón Jalil S.R.L.
   
   - title: "Estamos especializados en la comercialización de productos industriales derivados del limón, elaborados en versiones convencional y orgánica bajo los más altos estándares de calidad. Garantizamos una trazabilidad total, asegurando un control absoluto en cada etapa del proceso productivo, ya que trabajamos exclusivamente con fruta propia."
     image: "/images/inducitrica/certified1.png"

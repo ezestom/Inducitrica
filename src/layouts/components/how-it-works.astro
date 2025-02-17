@@ -44,6 +44,8 @@ const { title, subtitle } = how_it_works.data;
               class="open-dialog-button hover:cursor-crosshair mx-auto hover:drop-shadow-lg transition "
               data-index={index}>
               <img
+                transition:animate="slide"
+                transition:name={item.title}
                 src={item.image}
                 alt={`Imagen de ${item.title}`}
                 class="mx-auto h-auto rounded-3xl object-cover drop-shadow-lg max-h-[450px] "
@@ -70,6 +72,8 @@ const { title, subtitle } = how_it_works.data;
                   </svg>
                 </button>
                 <img
+                  transition:animate="slide"
+                  transition:name={item.title}
                   src={item.image}
                   alt={`Imagen ampliada de ${item.title}`}
                   class="rounded-3xl max-h-full w-auto "
