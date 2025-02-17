@@ -190,6 +190,9 @@ const { title, meta_title, description, image, noindex, canonical } =
   :root {
     scrollbar-width: thin;
     scrollbar-color: #8bcfad transparent;
+    &::-webkit-scrollbar {
+      width: 10px;
+    }
   }
   /* Ejemplo de animación 'fade' */
   @keyframes fade-in {

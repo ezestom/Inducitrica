@@ -39,9 +39,9 @@ const { title, subtitle } = how_it_works.data;
           {/* Caja de imagen con el segundo gradiente */}
           <div
             id="card"
-            class={`flex-shrink-0 mx-auto  overflow-hidden  from-[#e6f6ee]/50 to-[#8bcfad]/50 w-full h-full lg:rounded-3xl hover:drop-shadow-lg ${index % 2 === 0 ? "order-2" : "order-1"}`}>
+            class={`flex-shrink-0 mx-auto  overflow-hidden  from-[#e6f6ee]/50 to-[#8bcfad]/50 w-full h-full lg:rounded-3xl  ${index % 2 === 0 ? "order-2" : "order-1"}`}>
             <button
-              class="open-dialog-button hover:cursor-crosshair mx-auto hover:drop-shadow-lg transition bg-black/5 backdrop-blur w-full h-full p-6"
+              class="open-dialog-button hover:cursor-crosshair mx-auto  transition bg-black/5 backdrop-blur w-full h-full p-6 hover:shadow-lg"
               data-index={index}>
               <img
                 transition:animate="slide"
