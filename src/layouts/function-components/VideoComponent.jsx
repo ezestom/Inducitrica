@@ -22,7 +22,7 @@ const VideoComponent = ({
   return (
     <>
       {!play ? (
-        <div className="relative text-center">
+        <div className="relative text-center ">
           <button className="video-play-btn" onClick={() => setPlay(true)}>
             <Play />
           </button>
@@ -31,15 +31,15 @@ const VideoComponent = ({
             height={height}
             src={src}
             alt={title}
-            className="inline h-auto max-w-full rounded-2xl"
+            className="inline h-auto max-w-full rounded-3xl aspect-video"
           />
         </div>
       ) : (
-        <div className="youtube mx-auto text-center">
+        <div className="youtube mx-auto text-center aspect-video bg-gray-200 rounded-3xl">
           <YouTube
             videoId={video_id}
             opts={videoOptions}
-            iframeClassName={`  aspect-video ${video_height} ${video_width} max-w-full bg-transparent rounded-2xl`}
+            iframeClassName={`aspect-video ${video_height} ${video_width} max-w-full bg-transparent rounded-3xl`}
           />
         </div>
       )}

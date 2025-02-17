@@ -14,7 +14,7 @@ const { title, subtitle } = how_it_works.data;
 ---
 
 <section class="lg:px-8">
-  <div class="container px-0 lg:!px-2 pt-16">
+  <div class="container px-0 pt-16">
     {
       our_works.map((item: any, index: number) => (
         <div
@@ -39,9 +39,9 @@ const { title, subtitle } = how_it_works.data;
           {/* Caja de imagen con el segundo gradiente */}
           <div
             id="card"
-            class={`flex-shrink-0 mx-auto  rounded-3xl from-[#e6f6ee]/50 to-[#8bcfad]/50 p-6 ${index % 2 === 0 ? "order-2" : "order-1"}`}>
+            class={`flex-shrink-0 mx-auto  overflow-hidden  from-[#e6f6ee]/50 to-[#8bcfad]/50 w-full h-full rounded-3xl hover:drop-shadow-lg ${index % 2 === 0 ? "order-2" : "order-1"}`}>
             <button
-              class="open-dialog-button hover:cursor-crosshair mx-auto hover:drop-shadow-lg transition "
+              class="open-dialog-button hover:cursor-crosshair mx-auto hover:drop-shadow-lg transition bg-black/5 backdrop-blur w-full h-full p-6"
               data-index={index}>
               <img
                 transition:animate="slide"
@@ -108,7 +108,7 @@ const { title, subtitle } = how_it_works.data;
   });
 </script>
 
-<section class="page-hero my-32 lg:px-8">
+<section class="page-hero my-32 px-0">
   <div class="container">
     <div class="mx-auto text-center"></div>
     <div class="flex-wrap grid gap-8 lg:grid-cols-3">
@@ -122,7 +122,7 @@ const { title, subtitle } = how_it_works.data;
                 : undefined
             }`}>
             {/* Contenedor de imagen y contenido */}
-            <div class="flex flex-col h-full">
+            <div class="flex flex-col h-full bg-gray-100">
               <Image
                 width={400}
                 height={400}

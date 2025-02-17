@@ -25,7 +25,7 @@ bannerEn:
 ## key features
 key_features:
   title: "Company projections for 2031"
-  description: Considering these projections and the group's growth, there is a need to establish a factory to industrialize its own lemons. Today, the group has 35,000 tons of its own fruit, and production projections will exceed 60,000 tons in the next five years. This leads to the need to initiate discussions aimed at securing a commercialization and supply contract with Coca-Cola Company.  
+  description: Given the group's growth and future projections, the need arises to establish a factory for the industrialization of its own lemon production. Currently, the group has 35,000 tons of its own fruit, and production is expected to exceed 60,000 tons in the next years.  
 
   feature_list:
     - icon: "settings"
@@ -68,13 +68,13 @@ service:
         - Supporting more than 119 countries worldwide
         - Open transactions with multiple currencies
         - Customer Service in 79 languages
-    - title: Accountability that works for you
-      description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi egestas Werat viverra id et aliquet. Vulputate egestas sollicitudin.
+    - title: Sustainable Production from the Fields of Tucumán
+      description: In the fields of Tucumán, one of the best regions for citrus cultivation, we focus on lemon production with an emphasis on quality and sustainability. Our products, both conventional and organic, are grown in rich soils with total control over every phase of the process, always ensuring the highest standards.
       video:
-        thumbnail: "/images/intro-thumbnail.png"
+        thumbnail: "/images/inducitrica/farm15.jpg"
         video_id: "g3-VxLQO7do"
       button:
-        label: Know About Us
+        label: Learn More
         link: "#"
         enable: true
 

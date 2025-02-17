@@ -48,7 +48,7 @@ const { pathname } = Astro.url;
 ---
 
 <header
-  class="header fixed top-0 right-0 left-0 xl:max-w-[1400px] xl:rounded-3xl mx-auto w-full row justify-center shadow flex px-2"
+  class="header fixed top-0 right-0 left-0 xl:max-w-[1400px] xl:rounded-b-3xl mx-auto w-full row justify-center shadow flex px-2"
   id="top">
   <nav class="navbar container">
     <!-- logo -->
@@ -114,17 +114,20 @@ const { pathname } = Astro.url;
 </header>
 
 <style>
-  header {
-    animation: marginTop linear both;
-    animation-timeline: scroll();
-    animation-range: 0 50px;
-  }
-  @keyframes marginTop {
-    from {
-      margin-top: 0;
+  @media screen and (min-width: 768px) {
+    header {
+      animation: marginTop linear both;
+      animation-timeline: scroll();
+      animation-range: 0 50px;
     }
-    to {
-      margin-top: 0.5rem;
+    @keyframes marginTop {
+      from {
+        margin-top: 0;
+      }
+      to {
+        margin-top: 0.5rem;
+        border-radius: 1.5rem;
+      }
     }
   }
 </style>

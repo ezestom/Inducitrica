@@ -9,12 +9,10 @@ const HomapageFeature = ({ feature_list }) => {
         return (
           <div
             key={i}
-            className="flex flex-col justify-between rounded-lg bg-white p-8 shadow-lg"
+            className="flex flex-col justify-between rounded-lg bg-white p-8 shadow-xl"
           >
             <div>
-              <h3 className="h4 text-xl font-black lg:text-3xl">
-                {item.title}
-              </h3>
+              <h3 className=" text-xl font-black">{item.title}</h3>
               <p className="">{item.content}</p>
             </div>
           </div>

@@ -25,7 +25,7 @@ banner:
 ##key features
 key_features:
   title: "Proyecciones de la compañía para 2031"
-  description: Viendo esta proyecciones y el crecimiento del grupo, esto requiere la necesidad de poder montar una fabrica para industrializar su limón propio. Hoy el grupo cuenta con 35.000 Tn de fruta propia y la proyección de producción superara las 60.000 Tn en los próximos 5 años, esto lleva a solicitarles, poder entablar conversaciones con el objeto de  obtener un contrato de comercialización y aprovisionamiento con Coca Cola Company  
+  description: Dado el crecimiento del grupo y sus proyecciones a futuro, surge la necesidad de establecer una fábrica para industrializar su propia producción de limón. Actualmente, el grupo dispone de 35.000 toneladas de fruta propia, y se proyecta que su producción supere las 60.000 toneladas en los próximos años.
 
   feature_list:
     - icon: "settings"
@@ -61,21 +61,21 @@ service:
         image: "/images/sells-by-country.png"
 
   our_service:
-    - title: Accept payments any country in this whole universe
+    - title: Accept payments in any country in the entire universe
       desctiption: Donec sollicitudin molestie malesda. Donec sollitudin molestie malesuada. Mauris pellentesque nec, egestas non nisi. Cras ultricies ligula sed
-      image: "/images/collaboration.png"
+      image: "/images/inducitrica/farm15.jpg"
       list:
         - Supporting more than 119 country world
         - Open transaction with more than currencies
         - Customer Service with 79 languages
-    - title: Accountability that works for you
-      description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi egestas Werat viverra id et aliquet. vulputate egestas sollicitudin.
+    - title: Producción sostenible desde los campos de Tucumán
+      description: En los campos de Tucumán, una de las mejores regiones para el cultivo de cítricos, nos dedicamos a la producción de limón con un enfoque en calidad y sostenibilidad. Nuestros productos, tanto convencionales como orgánicos, son cultivados en suelos ricos y con el control total en cada fase del proceso, asegurando siempre los más altos estándares.
       video:
-        thumbnail: "/images/intro-thumbnail.png"
+        thumbnail: "/images/inducitrica/farm15.jpg"
         video_id: "g3-VxLQO7do"
       button:
-        label: Know About Us
-        link: "#"
+        label: Conoce más
+        link: "/about"
         enable: true
 
 #testimonial
