@@ -68,9 +68,11 @@ module.exports = {
   },
   plugins: [
     animations,
+    require('tailwindcss-motion'),
     require("@tailwindcss/typography"),
     require("@tailwindcss/forms"),
-    require("tailwind-bootstrap-grid")({
+    require("tailwind-bootstrap-grid"),
+    ({
       generateContainer: false,
       gridGutterWidth: "2rem",
       gridGutters: {
