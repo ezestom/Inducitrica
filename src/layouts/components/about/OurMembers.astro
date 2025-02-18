@@ -20,12 +20,12 @@ const {
         <div class="row">
           {
             member_list.map((item: any) => (
-              <div class="mb-6 flex flex-col px-6 text-center sm:col-6 lg:col-4 sm:items-center">
-                <div class="member-avatar inline-flex justify-center items-center rounded-full lg:bg-gradient from-primary to-secondary  lg:shadow-lg p-2">
+              <div class="mb-6 flex flex-col px-6 text-center sm:col-6 lg:col-4 items-center">
+                <div class="member-avatar inline-flex justify-center items-center rounded-full bg-gradient from-primary to-secondary  p-2 lg:shadow-lg">
                   <Image
                     height={112}
                     width={112}
-                    class="rounded-full h-28 w-28 object-cover shadow-lg grayscale"
+                    class="rounded-full h-36 w-36 object-cover shadow-lg grayscale"
                     src={item.image}
                     alt=""
                   />

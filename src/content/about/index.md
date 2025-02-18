@@ -57,12 +57,12 @@ members:
   description: "Conoce a las personas que hacen posible nuestra empresa."
   member_list:
     - name: Antonio Jalil
-      field: President
-      study: "Abogado en la Universidad de Buenos Aires (UBA)."
+      field: Presidente
+      study: "Abogacía en la Universidad de Tucumán (UNT)."
       image: "/images/users/antonio.png"
     - name: Ezequiel Almada
       study: "Máster en Finanzas de la Universidad de San Andrés."
-      field: Vice President
+      field: Vice Presidente
       image: "/images/users/ezequiel.jpg"
     - name: José Cebe
       study: "Abogado y Mediador, Magíster en Derecho Corporativo por la Universidad Austral"

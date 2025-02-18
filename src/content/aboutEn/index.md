@@ -58,7 +58,7 @@ members:
   member_list:
     - name: Antonio Jalil
       field: President
-      study: "Lawyer from the University of Buenos Aires (UBA)."
+      study: "Lawyer from the University of Tucumán (UNT) ."
       image: "/images/users/antonio.png"
     - name: Ezequiel Almada
       study: "Master in Finance from Universidad de San Andrés."
