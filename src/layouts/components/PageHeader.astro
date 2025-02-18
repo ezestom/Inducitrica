@@ -44,7 +44,7 @@ const { title, index_title, page_title, slug, content } = page_data || {};
   </ul> -->
   <div class="w-full text-balance lg:px-24 lg:py-6">
     <h6
-      class="font-black text-[2rem] pt-4 lg:pt-0 lg:!text-[4vw] text-white"
+      class="font-black text-[2rem] pt-4 lg:pt-0 lg:!text-[4vw] text-white motion-delay-[5ms] motion-scale-in-[0.8] motion-translate-x-in-[0%] motion-translate-y-in-[-42%] motion-duration-[500ms]"
       set:html={markdownify(
         page_data?.page_title ? page_data?.page_title : page_data?.title
       )}
