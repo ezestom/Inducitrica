@@ -16,7 +16,7 @@ perfomance:
 # works
 our_works:
   - title: "Somos una empresa líder en la producción de limón, conformada por cuatro compañías con campos estratégicamente ubicados en el sur de la provincia de Tucumán, una de las mejores regiones para el cultivo de cítricos. Con más de 30 años de experiencia en el sector, garantizamos calidad, innovación y compromiso con la excelencia."
-    image: "/images/inducitrica/lemon.jpg"
+    image: "/images/inducitrica/planta1.jpg"
     list:
       - Blazquez S.R.L.
       - Donato Alvarez S.R.L.

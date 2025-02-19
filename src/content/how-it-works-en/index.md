@@ -16,7 +16,7 @@ perfomance:
 # works
 our_works:
   - title: "We are a leading company in lemon production, made up of four companies with strategically located fields in the south of the Tucumán province, one of the best regions for citrus cultivation. With over 30 years of experience in the sector, we guarantee quality, innovation, and a commitment to excellence."
-    image: "/images/inducitrica/lemon.jpg"
+    image: "/images/inducitrica/planta1.jpg"
     list:
       - Blazquez S.R.L.
       - Donato Alvarez S.R.L.

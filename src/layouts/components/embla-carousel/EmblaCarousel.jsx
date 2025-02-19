@@ -25,6 +25,9 @@ import img11 from "../../../../public/images/inducitrica/lemon6.jpg";
 import img12 from "../../../../public/images/inducitrica/lemon1.jpg";
 import img13 from "../../../../public/images/inducitrica/lemon14.jpg";
 import img14 from "../../../../public/images/inducitrica/quinta3.jpg";
+import img15 from "../../../../public/images/inducitrica/planta2.jpg";
+import img16 from "../../../../public/images/inducitrica/planta3.jpg";
+import img17 from "../../../../public/images/inducitrica/planta1.jpg";
 
 const slides = [
   img1,
@@ -34,10 +37,13 @@ const slides = [
   img5,
   img6,
   img7,
+  img15,
   img8,
   img9,
+  img16,
   img10,
   img11,
+  img17,
   img12,
   img13,
   img14,
