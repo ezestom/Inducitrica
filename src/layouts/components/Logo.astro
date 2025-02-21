@@ -15,9 +15,25 @@ const {
   logo_text: string;
   title: string;
 } = config.site;
+
+import {
+  getLangFromUrl,
+  useTranslations,
+  useTranslatedPath,
+} from "../../i18n/utils";
+import HeaderLink from "../components/HeaderLink.astro";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+const translatePath = useTranslatedPath(lang);
+
+// create a function to put the href in the HeaderLink component, if lang is es put "/", if lang is en put "/en"
 ---
 
-<div class="navbar-brand block transition-transform ease-in-out">
+<HeaderLink
+  href={`/${lang === "es" ? "" : "home"}`}
+  locale={lang}
+  class="logoButton group inline-flex text-base tracking-tight text-primary-950 transition focus-visible:outline-none dark:text-primary-200 font-black hover:scale-105 active:scale-95">
   <Image
     id="logo"
     width={logo_width.replace("px", "") * 2}
@@ -26,20 +42,17 @@ const {
     alt={title}
     class="w-auto h-14 drop-shadow-sm"
   />
-</div>
+</HeaderLink>
 
 <style>
-  #logo {
+  #logo:hover {
     filter: drop-shadow(0 0 0.5rem rgba(255, 255, 255, 0.25));
   }
 </style>
 
 <script is:inline>
-  const scroll = document.getElementById("scroll");
-  scroll?.addEventListener("click", () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
+  document.querySelector(".logoButton").addEventListener("click", () => {
+    // scroll top 0 and smooth behavior
+    window.scrollTo({ top: 0, behavior: "smooth" });
   });
 </script>
