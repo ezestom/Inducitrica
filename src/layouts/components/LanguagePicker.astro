@@ -15,12 +15,12 @@ const otherLocales = Object.values(languages).filter(
   (locale) => locale.code !== lang
 );
 ---
+
 <div class="z-20 w-fit">
-  <div
-    class="font-base bg-black/50 hover:bg-black/50 backdrop-blur group rounded-3xl text-base font-semibold transition-all">
+  <div class="backdrop-blur group rounded-3xl transition-all">
     <button
       type="button"
-      class="inline-flex btn btn-white btn-sm items-center justify-center backdrop-blur text-primary-950 shadow ring-primary-950 transition hover:bg-primary-200/75 focus:outline-none"
+      class={`btn btn-white btn-sm items-center text-sm font-bold aspect-square flex justify-center backdrop-blur overflow-hidden text-primary-950 shadow ring-primary-950 transition hover:bg-primary-200/75 focus:outline-none flag-${lang} z-20`}
       aria-expanded="true"
       aria-haspopup="true">
       <!-- <currentLocaleData.flag /> -->
@@ -31,19 +31,15 @@ const otherLocales = Object.values(languages).filter(
       {
         otherLocales.map((locale) => (
           <a
-        class="inline-flex btn btn-white btn-sm items-center justify-center rounded-3xl text-primary-950 shadow ring-primary-950 transition hover:bg-primary-200/75 focus:outline-none"
-        href={locale.code === "en" 
-          ? `/en/home`
-          : `/`}
-          >
-        {locale.name}
+            class="inline-flex btn btn-white btn-sm text-sm font-bold items-center justify-center rounded-3xl  text-primary-950 shadow ring-primary-950 transition hover:bg-primary-200/75 focus:outline-none"
+            href={locale.code === "en" ? `/en/home` : `/`}>
+            {locale.name}
           </a>
         ))
       }
     </ul>
   </div>
 </div>
-
 
 <script>
   const changeLanguage = (e: any) => {
@@ -59,3 +55,27 @@ const otherLocales = Object.values(languages).filter(
     item.addEventListener("click", changeLanguage);
   });
 </script>
+
+<style>
+  .flag-en::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url("/public/images/flags/US.svg");
+    background-size: cover;
+    background-position: center;
+    opacity: 0.25;
+    filter:grayscale(50%);
+  }
+
+  .flag-es::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url("/public/images/flags/AR.svg");
+    background-size: cover;
+    background-position: center;
+    opacity: 0.25;
+    filter:grayscale(50%);
+  }
+</style>
