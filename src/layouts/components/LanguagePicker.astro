@@ -24,14 +24,14 @@ const otherLocales = Object.values(languages).filter(
       aria-expanded="true"
       aria-haspopup="true">
       <!-- <currentLocaleData.flag /> -->
-      {currentLocaleData.name}
+      <span class="text-black z-20"> {currentLocaleData.name}</span>
     </button>
     <ul
       class="group-hover:animate-fade-down group-hover:animate-duration-200 group-flex-col absolute hidden w-full gap-1 pt-1 group-hover:flex group-hover:flex-col">
       {
         otherLocales.map((locale) => (
           <a
-            class="inline-flex btn btn-white btn-sm text-sm font-bold items-center justify-center rounded-3xl  text-primary-950 shadow ring-primary-950 transition hover:bg-primary-200/75 focus:outline-none"
+            class="inline-flex btn btn-white btn-sm text-sm font-bold items-center justify-center rounded-3xl text-primary-950 shadow ring-primary-950 transition hover:bg-primary-200/75 focus:outline-none"
             href={locale.code === "en" ? `/en/home` : `/`}>
             {locale.name}
           </a>
@@ -64,8 +64,7 @@ const otherLocales = Object.values(languages).filter(
     background-image: url("/public/images/flags/US.svg");
     background-size: cover;
     background-position: center;
-    opacity: 0.25;
-    filter:grayscale(50%);
+    opacity: 0.35;
   }
 
   .flag-es::before {
@@ -75,7 +74,6 @@ const otherLocales = Object.values(languages).filter(
     background-image: url("/public/images/flags/AR.svg");
     background-size: cover;
     background-position: center;
-    opacity: 0.25;
-    filter:grayscale(50%);
+    opacity: 0.35;
   }
 </style>

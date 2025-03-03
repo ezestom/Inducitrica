@@ -1,11 +1,11 @@
 export const languages: Record<string, { code: string; name: string }> = {
   es: {
     code: "es",
-    name: "Es",
+    name: "Esp",
   },
   en: {
     code: "en",
-    name: "En",
+    name: "Eng",
   },
 };
 
