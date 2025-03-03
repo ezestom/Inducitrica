@@ -61,20 +61,13 @@ service:
         image: "/images/sells-by-country.png"
 
   our_service:
-    - title: Accept payments in any country in the entire universe
-      desctiption: Donec sollicitudin molestie malesda. Donec sollitudin molestie malesuada. Mauris pellentesque nec, egestas non nisi. Cras ultricies ligula sed
-      image: "/images/inducitrica/farm15.jpg"
-      list:
-        - Supporting more than 119 country world
-        - Open transaction with more than currencies
-        - Customer Service with 79 languages
     - title: Producción sostenible desde los campos de Tucumán
       description: En los campos de Tucumán, una de las mejores regiones para el cultivo de cítricos, nos dedicamos a la producción de limón con un enfoque en calidad y sostenibilidad. Nuestros productos, tanto convencionales como orgánicos, son cultivados en suelos ricos y con el control total en cada fase del proceso, asegurando siempre los más altos estándares.
       video:
         thumbnail: "/images/inducitrica/farm15.jpg"
         video_id: "g3-VxLQO7do"
       button:
-        label: Conoce más
+        label: Conoce más sobre nosotros
         link: "/about"
         enable: true
 

@@ -34,7 +34,7 @@ project_management:
         content: Encourage frequent & timely recognition integrating with communication tools
         icon: tool  #icon package react-feather-icon [https://feathericons.com/]
   feature_service:
-    title: Accept payments from devices any country in this universe
+    title: Accept ersepayments from devices any country in this univ
     description: Donec sollicitudin molestie malesda. Donec sollitudin molestie malesuada. Mauris pellentesque nec, egestas non nisi. Cras ultricies ligula sed
     image: "/images/features/feature-img-1.png"
     list:

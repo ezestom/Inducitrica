@@ -1,5 +1,6 @@
 import { humanize } from "@/lib/utils/textConverter";
 import * as Icon from "react-feather";
+import { AiFillCheckCircle } from "react-icons/ai";
 
 const HomapageFeature = ({ feature_list }) => {
   return (
@@ -9,11 +10,14 @@ const HomapageFeature = ({ feature_list }) => {
         return (
           <div
             key={i}
-            className="flex flex-col justify-between rounded-lg bg-white p-8 shadow-xl"
+            className="flex flex-col rounded-xl bg-white p-8 shadow-xl"
           >
-            <div>
-              <h3 className=" text-xl font-black">{item.title}</h3>
-              <p className="">{item.content}</p>
+            <div className="text-center flex flex-col items-center justify-center">
+              <h3 className=" text-xl font-black flex items-center justify-center gap-x-1">
+                <AiFillCheckCircle className=" fill-primary text-white" />
+                {item.title}
+              </h3>
+              <p className="text-balance">{item.content}</p>
             </div>
           </div>
         );
