@@ -1,7 +1,7 @@
 {
   "site": {
     "title": "Inducítrica",
-    "base_url": "https://inducitrica.vercel.app",
+    "base_url": "https://inducitrica.com",
     "base_path": "/",
     "trailing_slash": false,
     "favicon": "/images/favicon.png",
@@ -44,7 +44,7 @@
 
   "metadata": {
     "meta_author": "Inducítrica",
-    "meta_image": "/images/og-image.png",
-    "meta_description": "astro"
+    "meta_image": "/images/logo.png",
+    "meta_description": "Líderes en cítricos, comprometidos con la excelencia y el desarrollo sostenible"
   }
 }
