@@ -12,7 +12,7 @@ input#nav-toggle:checked ~ #nav-menu {
 }
 
 .header {
-  @apply sticky top-0 z-50 py-2 transition-all duration-300 backdrop-blur lg:bg-black/50;
+  @apply sticky top-0 z-50 py-2 transition-all duration-300 backdrop-blur lg:bg-black/65;
 
   // &-sticky {
   //   @apply bg-black/50 shadow backdrop-blur-sm;
@@ -20,7 +20,7 @@ input#nav-toggle:checked ~ #nav-menu {
 }
 @media (max-width: 1024px) {
   .header {
-    @apply bg-black/75 pb-4 gap-4;
+    @apply bg-black/85 pb-4 gap-4;
   }
   
 }

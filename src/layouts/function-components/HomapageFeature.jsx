@@ -10,11 +10,11 @@ const HomapageFeature = ({ feature_list }) => {
         return (
           <div
             key={i}
-            className="flex flex-col rounded-xl bg-white p-8 shadow-xl"
+            className="flex flex-col rounded-xl bg-white p-4 md:p-8 shadow-xl"
           >
             <div className="text-center flex flex-col items-center justify-center">
-              <h3 className=" text-xl font-black flex items-center justify-center gap-x-1">
-                <AiFillCheckCircle className=" fill-primary text-white" />
+              <h3 className="text-sm md:text-base font-black flex items-center justify-center gap-x-1">
+                <AiFillCheckCircle className=" fill-primary text-white hidden md:block" />
                 {item.title}
               </h3>
               <p className="text-balance">{item.content}</p>

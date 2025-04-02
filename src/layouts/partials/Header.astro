@@ -48,10 +48,10 @@ const { pathname } = Astro.url;
 ---
 
 <header
-  class="header fixed top-0 right-0 left-0 xl:max-w-[1400px] xl:rounded-b-3xl mx-auto w-full row justify-center shadow flex px-2 z-50">
+  class="header fixed top-0 right-0 left-0 xl:max-w-[1400px] xl:rounded-b-3xl mx-auto w-full row justify-center shadow flex px-2 z-50 p-0">
   <nav class="navbar container">
     <!-- logo -->
-    <div class="order-0 flex-1 lg:flex-none">
+    <div class="order-0 flex-1 lg:flex-none p-1">
       <Logo />
     </div>
     <!-- navbar toggler -->
@@ -83,7 +83,7 @@ const { pathname } = Astro.url;
 
     <ul
       id="nav-menu"
-      class="navbar-nav order-3 hidden w-full lg:order-1 lg:flex lg:w-auto lg:space-x-2 text-white">
+      class="navbar-nav order-3 hidden py-4 w-full lg:order-1 lg:flex lg:w-auto lg:space-x-2 text-white ">
       {
         links.map((link: any) => (
           <HeaderLink
