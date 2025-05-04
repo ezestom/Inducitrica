@@ -7,6 +7,22 @@ import { markdownify } from "@/lib/utils/textConverter";
 const { footer } = menu;
 const { copyright, location, email, phone1, phone2, footer_description } =
   config.params;
+
+import {
+  getLangFromUrl,
+  useTranslations,
+  useTranslatedPath,
+} from "../../i18n/utils";
+import HeaderLink from "../components/HeaderLink.astro";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+const translatePath = useTranslatedPath(lang);
+
+const complaint = {
+  ref: "04",
+  href: "/complaint",
+};
 ---
 
 <footer class="footer bg-[#F1F1F1]">
@@ -31,24 +47,30 @@ const { copyright, location, email, phone1, phone2, footer_description } =
               >{email}</a
             >
           </li>
-          <!-- <li>
-            <a class="hover:text-primary hover:underline" href={`tel:${phone1}`}
-              >{phone1}</a
-            >
-          </li> -->
           <li>
             <a class="hover:text-primary hover:underline" href={`tel:${phone2}`}
               >{phone2}</a
             >
           </li>
+          <!-- <li>
+            <a class="hover:text-primary hover:underline" href="/complaint"
+              >• Denuncias</a
+            >
+          </li> -->
+          <HeaderLink
+            href={complaint.href}
+            locale={lang}
+            class="text-red-300 hover:text-red-500 text-sm hover:underline">
+            <span> • Formulario de denuncias</span>
+          </HeaderLink>
         </ul>
       </div>
-    </div>
-  </div>
-  <div class="container max-w-[1440px]">
-    <div
-      class="footer-copyright mx-auto border-t border-border pb-10 pt-7 text-center">
-      <p class="content text-text" set:html={markdownify(copyright)} />
+      <div class="container max-w-[1440px]">
+        <div
+          class="footer-copyright mx-auto border-t border-border pb-10 pt-7 text-center">
+          <p class="content text-text" set:html={markdownify(copyright)} />
+        </div>
+      </div>
     </div>
   </div>
 </footer>
