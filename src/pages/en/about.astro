@@ -4,11 +4,12 @@ import CounterComponent from "@/components/about/CounterComponent.astro";
 import Gallery from "@/components/about/Gallery.astro";
 import OurMembers from "@/components/about/OurMembers.astro";
 import Works from "@/components/about/Works.astro";
+import Pdf from "@/components/about/pdf.astro";
 import Base from "@/layouts/Base.astro";
 import { getEntryBySlug } from "astro:content";
 
 const about = await getEntryBySlug("aboutEn", "index");
-const { counter, gallery, features, members } = about.data;
+const { counter, gallery, features, members, pdf } = about.data;
 const page_data = {
   ...about.data,
   content: about.body,
@@ -31,6 +32,8 @@ const page_data = {
       <Gallery gallery={gallery} />
       <!-- our members -->
       <OurMembers members={members} />
+      <!-- pdf  -->
+      <Pdf pdf={pdf} />
     </div>
   </section>
 </Base>

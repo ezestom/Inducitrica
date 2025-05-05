@@ -76,6 +76,24 @@ members:
       study: "MBA en la Universidad de Valparaíso, Chile, y especialización en Negociación por la Fundación Magíster."
       field: CEO Inducítrica
       image: "/images/users/diego.png"
+
+## pdf
+pdf:
+  title: "Programa de integridad"
+  button:
+    label: Ver PDF
+    link: "https://themefisher.com/astro-themes/pinwheel-astro"
+    enable: true
+  pdf_list:
+    - title: Política Anticorrupción
+      content: "La presente Política Anticorrupción define los principios y lineamientos esenciales en materia de prácticas anticorrupción, actuando como un complemento de la normativa vigente en la República Argentina, así como de cualquier disposición legal o reglamentaria que la modifique, actualice o reemplace en el futuro. De esta manera, INDUCITRICA busca que sus miembros y los terceros con los que interactúa desarrollen sus actividades y acuerdos comerciales con ética e integridad."
+      link: "/pdf/politic.pdf"
+    - title: Programa de Integridad
+      content: "El Programa de Integridad (en adelante, el “Programa”) consiste en un sistema conformado por acciones, procesos y procedimientos establecidos por Inducítrica S.A. (en adelante, “Inducítrica” o la “Empresa”) destinados a promover la integridad y a prevenir, detectar, corregir y, eventualmente, sancionar conductas indebidas o actos ilícitos que pudieran ser realizados por un miembro de la sociedad o un tercero en representación de la Empresa. Este Programa surge como resultado del compromiso indeclinable del Directorio en desarrollar políticas de sustentabilidad, transparencia e integridad, así como la prevención y lucha contra la corrupción. Consciente del rol fundamental que desempeña el sector privado en estos aspectos, Inducítrica recepta las recomendaciones, buenas prácticas y estándares internacionales vigentes en la materia. Estos lineamientos persiguen la promoción de una cultura de integridad y buenas prácticas de gestión para el mantenimiento de un ambiente corporativo íntegro, ético y transparente."
+      link: "/pdf/integrity.pdf"
+    - title: Código de Ética
+      content: "Nuestra empresa INDUCITRICA SA fortalece su crecimiento y el apoyo en su conducta ética de los que formamos la compañía. Los valores éticos corporativos y el Código de Ética poseen principios que hacen a la cultura de INDUCITRICA SA La ética es parte integral de nuestras acciones y actividades, donde, no solo los resultados que se obtienen son importantes, sino la manera y la forma que se alcanzan Es importante que debemos ser consciente que, lo que conformamos nuestra empresa, debemos trabajar con muchísima honestidad e integridad, y eso trasladarlo a los que terceros que ayudan a llevar nuestras tareas día a día. La reputación de nuestra compañía es un recurso tangible muy importante, hay que valorarlo, trabajarlo, cuidarlo y desarrollarlo, interna y externamente, y creemos que el lanzamiento del Código es un paso fundamental, por el cual, contamos con el apoyo y colaboración de los que formamos INDUCITRICA SA."
+      link: "/pdf/code.pdf"
 ---
 
 Inducítrica es líder en la producción de limón, con más de 30 años de experiencia y campos estratégicamente ubicados en el sur de Tucumán, una de las mejores zonas para el cultivo de cítricos. Nos especializamos en la comercialización de productos derivados del limón, como jugo concentrado, aceite esencial y cáscara deshidratada, en versiones convencional y orgánica, garantizando trazabilidad total y control absoluto del proceso, gracias a nuestra fruta propia.

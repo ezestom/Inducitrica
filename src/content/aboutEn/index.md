@@ -76,6 +76,24 @@ members:
       study: "MBA from the University of Valparaíso, Chile, and specialization in Negotiation from the Magíster Foundation."
       field: CEO Inducítrica
       image: "/images/users/diego.png"
+
+## pdf
+pdf:
+  title: "Integrity Program"
+  button:
+    label: See PDF
+    link: "https://themefisher.com/astro-themes/pinwheel-astro"
+    enable: true
+  pdf_list:
+    - title: Anti-Corruption Policy
+      content: "This Anti-Corruption Policy defines the essential principles and guidelines regarding anti-corruption practices, acting as a complement to the current regulations in the Republic of Argentina, as well as any legal or regulatory provision that may amend, update, or replace them in the future. In this way, INDUCITRICA seeks for its members and third parties with whom it interacts to carry out their activities and business agreements with ethics and integrity."
+      link: "/pdf/politic.pdf"
+    - title: Integrity Program
+      content: "The Integrity Program (hereinafter, the “Program”) is a system comprised of actions, processes, and procedures established by Inducítrica S.A. (hereinafter, “Inducítrica” or the “Company”) aimed at promoting integrity and preventing, detecting, correcting, and, if necessary, sanctioning improper conduct or illegal acts that may be committed by a company member or a third party representing the Company. This Program arises from the Board of Directors’ unwavering commitment to developing policies of sustainability, transparency, and integrity, as well as to preventing and combating corruption. Aware of the fundamental role the private sector plays in these matters, Inducítrica embraces current recommendations, best practices, and international standards in the field. These guidelines seek to promote a culture of integrity and sound management practices to maintain an ethical, transparent, and honest corporate environment."
+      link: "/pdf/integrity.pdf"
+    - title: Code of Ethics
+      content: "Our company, INDUCITRICA S.A., strengthens its growth by upholding the ethical conduct of those who are part of the organization. Our corporate ethical values and the Code of Ethics include principles that shape the culture of INDUCITRICA S.A. Ethics are an integral part of our actions and operations, where not only the outcomes matter but also how they are achieved. It is important to be aware that those of us who make up our company must work with the highest honesty and integrity, and this must also be passed on to third parties who assist us in our daily tasks. The reputation of our company is a highly valuable and tangible asset that must be appreciated, nurtured, protected, and developed both internally and externally. We believe that launching the Code is a key step forward, for which we count on the support and collaboration of everyone at INDUCITRICA S.A."
+      link: "/pdf/code.pdf"
 ---
 
 Inducítrica is a leader in lemon production, with over 30 years of experience and strategically located fields in the south of Tucumán, one of the best regions for citrus cultivation. We specialize in the commercialization of lemon-derived products, such as concentrated juice, essential oil, and dehydrated peel, in both conventional and organic versions, ensuring total traceability and absolute process control, thanks to our own fruit.
