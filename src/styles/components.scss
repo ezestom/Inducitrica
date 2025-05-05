@@ -604,28 +604,28 @@ select:invalid {
   @apply mx-auto lg:max-w-[412px];
 }
 
-.blockquote {
-  p {
-    @apply text-2xl text-dark;
-  }
-  blockquote {
-    @apply relative border-none p-0 not-italic;
-  }
-  blockquote p {
-    &::after,
-    &::before {
-      @apply absolute h-5 w-5 bg-[url('/images/icons/quote.svg')] bg-contain bg-no-repeat content-[''] lg:h-8 lg:w-8;
-    }
+// .blockquote {
+//   p {
+//     @apply text-2xl text-dark;
+//   }
+//   blockquote {
+//     @apply relative border-none p-0 not-italic;
+//   }
+//   blockquote p {
+//     &::after,
+//     &::before {
+//       @apply absolute h-5 w-5 bg-[url('/images/icons/quote.svg')] bg-contain bg-no-repeat content-[''] lg:h-8 lg:w-8;
+//     }
 
-    &::before {
-      @apply -left-4 top-0 -translate-x-full;
-    }
+//     &::before {
+//       @apply -left-4 top-0 -translate-x-full;
+//     }
 
-    &::after {
-      @apply -right-4 bottom-0 translate-x-full rotate-180;
-    }
-  }
-}
+//     &::after {
+//       @apply -right-4 bottom-0 translate-x-full rotate-180;
+//     }
+//   }
+// }
 
 //comment form
 .comment-form {
