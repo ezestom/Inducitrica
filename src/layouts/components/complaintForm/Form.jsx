@@ -100,8 +100,8 @@ export function Form({
       <form
         onSubmit={handleSubmit}
         method="POST"
-        // action="https://formsubmit.co/diemaxdecima@gmail.com"
-        action="https://formsubmit.co/ezequielstom@gmail.com"
+        action="https://formsubmit.co/compliance@inducitrica.com"
+        // action="https://formsubmit.co/ezequielstom@gmail.com"
         className="mt-2 mx-2"
       >
         {/* Indicador de carga */}
