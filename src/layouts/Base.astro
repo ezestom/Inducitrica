@@ -46,7 +46,6 @@ const { title, meta_title, description, image, noindex, canonical } =
     <!-- <meta http-equiv="refresh" content="0;url=/en/" /> -->
     <ViewTransitions />
 
-   
     <!-- responsive meta -->
     <meta
       name="viewport"
@@ -142,7 +141,7 @@ const { title, meta_title, description, image, noindex, canonical } =
   </body>
 </html>
 
-<style>
+<style is:global>
   /* Registra tus fuentes personalizadas: solo variantes Normal (400) y Bold (700).
     Asegúrate de que las rutas a los archivos .otf sean correctas. */
 
@@ -151,7 +150,7 @@ const { title, meta_title, description, image, noindex, canonical } =
     font-family: "GabrielSans";
     /* Necesitas un archivo para la variante "normal" o "regular" de GabrielSans.
        Si no tienes un "Gabriel-Sans-Regular.otf", revisa si "Gabriel-Sans-Normal.otf" existe o el archivo que uses para el peso 400. */
-    src: url("/fonts/Gabriel-Sans-Regular.otf") format("opentype");
+    src: url("../../public/fonts/Gabriel-Sans-Regular.otf") format("opentype");
     font-weight: 400; /* Normal */
     font-style: normal;
     font-display: swap;
@@ -160,7 +159,7 @@ const { title, meta_title, description, image, noindex, canonical } =
   /* GabrielSans - Bold (Peso 700) */
   @font-face {
     font-family: "GabrielSans";
-    src: url("/fonts/Gabriel-Sans-Bold.otf") format("opentype");
+    src: url("../../public/fonts/Gabriel-Sans-Bold.otf") format("opentype");
     font-weight: 700; /* Bold */
     font-style: normal;
     font-display: swap;
@@ -169,7 +168,7 @@ const { title, meta_title, description, image, noindex, canonical } =
   /* GabrielSansCond - Normal (Peso 400) */
   @font-face {
     font-family: "GabrielSansCond";
-    src: url("/fonts/Gabriel-Sans-Cond-Normal.otf")
+    src: url("../../public/fonts/Gabriel-Sans-Cond-Normal.otf")
       format("opentype");
     font-weight: 400; /* Normal */
     font-style: normal;
@@ -181,7 +180,7 @@ const { title, meta_title, description, image, noindex, canonical } =
     font-family: "GabrielSansCond";
     /* Necesitas un archivo para la variante "bold" de GabrielSansCond.
        Si no tienes "Gabriel-Sans-Cond-Bold.otf", asegúrate de usar el nombre de archivo correcto si existe. */
-    src: url("/fonts/Gabriel-Sans-Cond-Bold.otf") format("opentype"); /* **VERIFICA SI ESTE ARCHIVO EXISTE EN TU CARPETA** */
+    src: url("../../public/fonts/Gabriel-Sans-Cond-Bold.otf") format("opentype"); /* **VERIFICA SI ESTE ARCHIVO EXISTE EN TU CARPETA** */
     font-weight: 700; /* Bold */
     font-style: normal;
     font-display: swap;

@@ -6,54 +6,10 @@ import { getI18n } from "@/i18n/index";
 const lang = Astro.url.pathname.split("/")[1]; // ejemplo: /en/home -> "en"
 const i18n = getI18n(lang);
 
-// const swipers = [
-//   {
-//     title: "El mejor aceite",
-//     titleYellow: "nace del mejor limón",
-//     first_paragraph:
-//       "En Inducítrica, no salimos a comprar limón: el limón es nuestro. ",
-//     second_paragraph: "Somos la primera exportadora de limón de la Argentina.",
-//     link1: "/the-best-oil",
-//   },
-//   {
-//     title: "Sin planeta, ",
-//     titleYellow: "no hay limón",
-//     first_paragraph: "En Inducítrica, preservamos el pedemonte nativo,",
-//     second_paragraph:
-//       "construimos un embalse para riego y medimos la huella de carbono.",
-//     link2: "/without-planet",
-//   },
-//   {
-//     title: "1.800",
-//     titleYellow: " hectáreas propias",
-//     first_paragraph:
-//       "En Inducítrica, los campos respiran el aire fértil de Tucumán, en Argentina;",
-//     second_paragraph: "una de las mejores zonas del mundo para cítricos.",
-//     link3: "/1800-hectares",
-//   },
-// ];
 const { swiper_1, swiper_2, swiper_3 } = i18n.HERO;
 ---
 
 <section class="h-screen bg-white">
-  <!-- <SlideHero
-    client:visible
-    title1={swipers[0].title}
-    titleYellow1={swipers[0].titleYellow}
-    first_paragraph1={swipers[0].first_paragraph}
-    second_paragraph1={swipers[0].second_paragraph}
-    href1={swipers[0].link1}
-    title2={swipers[1].title}
-    titleYellow2={swipers[1].titleYellow}
-    first_paragraph2={swipers[1].first_paragraph}
-    second_paragraph2={swipers[1].second_paragraph}
-    href2={swipers[1].link2}
-    title3={swipers[2].title}
-    titleYellow3={swipers[2].titleYellow}
-    first_paragraph3={swipers[2].first_paragraph}
-    second_paragraph3={swipers[2].second_paragraph}
-    href3={swipers[2].link3}
-  /> -->
   <SlideHero
     client:visible
     title1={swiper_1.title}
