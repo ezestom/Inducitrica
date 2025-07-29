@@ -4,8 +4,8 @@
     "base_url": "https://inducitrica.com",
     "base_path": "/",
     "trailing_slash": false,
-    "favicon": "/images/favicon.png",
-    "logo": "/images/logo.png",
+    "favicon": "/images/favicon.webp",
+    "logo": "/images/texture_bg/logo_text_esp.webp",
     "logo_width": "147",
     "logo_height": "31",
     "logo_text": "Inducítrica"

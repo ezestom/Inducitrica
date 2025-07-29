@@ -29,7 +29,6 @@ export function useTranslatedPath(lang: keyof typeof ui) {
   };
 }
 
-
 export function getRouteFromUrl(url: URL): string | undefined {
   const pathname = new URL(url).pathname;
   const parts = pathname?.split("/");

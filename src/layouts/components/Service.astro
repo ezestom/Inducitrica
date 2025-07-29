@@ -21,9 +21,9 @@ const lang = getLangFromUrl(Astro.url);
     <!-- <HomepageTab client:load homepage_tab={homepage_tab} /> -->
     {
       our_service.map((item: any, index: number) => (
-        <div class=" flex flex-col lg:flex-row-reverse bg-black/5 rounded-3xl p-6 lg:p-12 ">
+        <div class=" flex flex-col lg:flex-row-reverse bg-black/5 rounded-3xl  p-6 lg:p-12 ">
           <div
-            class={`w-full lg:w-[1/2] ${index % 2 === 0 ? "order-0" : "order-1"} `}>
+            class={`w-full lg:w-[1/2] ${index % 2 === 0 ? "order-0" : "order-1"}  `}>
             {item.video && (
               <VideoComponent
                 client:load

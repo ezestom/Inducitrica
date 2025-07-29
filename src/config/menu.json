@@ -1,12 +1,28 @@
 {
   "main": [
     {
-      "name": "Inicio",
-      "url": "/"
-    },
-    {
       "name": "Nosotros",
       "url": "/about"
+    },
+    {
+      "name": "Productos",
+      "url": "/products"
+    },
+    {
+      "name": "Noticias",
+      "url": "/news"
+    },
+    {
+      "name": "Sustentabilidad",
+      "url": "/sustainability"
+    },
+    {
+      "name": "Calidad",
+      "url": "/quality"
+    },
+    {
+      "name": "Certificaciones",
+      "url": "/certifications"
     },
     {
       "name": "Contacto",

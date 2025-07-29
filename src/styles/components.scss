@@ -3,7 +3,7 @@
 
 // container
 .container {
-  @apply mx-auto max-w-[1400px] px-4;
+  @apply mx-auto px-4;
 }
 
 
@@ -14,13 +14,14 @@
 
 // social icon style
 .social-icons {
+  @apply flex;
   li {
-    @apply mr-2 inline-block;
+    @apply  inline-block flex w-full items-center justify-center;
     a {
-      @apply inline-flex h-11 w-11 items-center justify-center rounded-full bg-white text-center transition-all duration-200 hover:bg-primary;
+      @apply inline-flex h-11 w-11 items-center justify-center rounded-full text-center transition-all duration-200 hover:opacity-80;
 
       svg {
-        @apply m-auto h-11 fill-dark text-xl;
+        @apply m-auto h-11 fill-white text-xl;
       }
 
       path {
@@ -292,40 +293,13 @@ select:invalid {
   }
 
   &-play-btn {
-    @apply absolute left-1/2 top-1/2 z-10 flex h-[78px] w-[78px] -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full bg-primary;
-    animation: shadow-pulse 1.5s infinite;
+    @apply absolute left-1/2 top-1/2 z-10 flex h-[50px] w-[50px] -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full bg-primary hover:scale-105 transition-all duration-300;
+  
     svg {
-      @apply h-6 w-5 fill-white text-white;
-    }
-    &::after {
-      @apply absolute left-0 top-0 h-full w-full rounded-full content-[''];
-      animation: shadow-pulse-2 1.4s infinite;
+      @apply h-6 w-5 fill-secondary text-secondary;
     }
   }
 
-  @keyframes shadow-pulse {
-    0% {
-      box-shadow: 0 0 0 0px rgba(254, 96, 25, 0.7);
-    }
-    70% {
-      box-shadow: 0 0 0 35px rgba(254, 96, 25, 0);
-    }
-    100% {
-      box-shadow: 0 0 0 0 rgba(254, 96, 25, 0);
-    }
-  }
-
-  @keyframes shadow-pulse-2 {
-    0% {
-      box-shadow: 0 0 0 0px rgba(254, 96, 25, 0.7);
-    }
-    70% {
-      box-shadow: 0 0 0 20px rgba(254, 96, 25, 0);
-    }
-    100% {
-      box-shadow: 0 0 0 0 rgba(254, 96, 25, 0);
-    }
-  }
 }
 
 //review-carousel

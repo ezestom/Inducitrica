@@ -12,7 +12,7 @@ export function TopButton() {
     <button
       id="scroll"
       onClick={goTop}
-      class="fixed bottom-3 right-4 sm:right-60 m-auto w-10 h-10 bg-white dark:bg-gray-800 rounded-xl shadow-lg hover:scale-105 active:scale-95 transition opacity-0 dark:border-gray-700 border"
+      class="fixed bottom-3 right-4 sm:right-60 m-auto w-10 h-10 bg-white dark:bg-gray-800 shadow-lg hover:scale-105 active:scale-95 transition opacity-0 dark:border-gray-700 border"
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -23,8 +23,8 @@ export function TopButton() {
         stroke-width="2"
         stroke="currentColor"
         fill="none"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       >
         <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
         <polyline points="6 15 12 9 18 15"></polyline>

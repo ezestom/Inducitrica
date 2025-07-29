@@ -1,18 +1,112 @@
+// styles/main.scss
+// Directiva para usar funciones de Sass, como meta.load-css
 @use "sass:meta";
+
+// Importa las directivas base de Tailwind CSS, componentes y utilidades.
+// Estas deben estar al principio para que Tailwind pueda construir su CSS.
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+// Define las fuentes personalizadas usando @font-face
+// Esto le dice al navegador cómo cargar tus archivos de fuente locales
 @layer base {
   @include meta.load-css("base");
+
+  // Gabriel-Sans-Black-Italic.otf (Peso 900, Itálica)
+  @font-face {
+    font-family: "GabrielSans";
+    src: url("/src/assets/fonts/Gabriel-Sans-Black-Italic.otf") format("opentype");
+    font-weight: 900;
+    /* 'Black' usualmente es 900 */
+    font-style: italic;
+    font-display: swap;
+    /* Para controlar el comportamiento de carga de la fuente */
+  }
+
+  // Gabriel-Sans-Black.otf (Peso 900, Normal)
+  @font-face {
+    font-family: "GabrielSans";
+    src: url("/src/assets/fonts/Gabriel-Sans-Black.otf") format("opentype");
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  // Gabriel-Sans-Bold-Italic.otf (Peso 700, Itálica)
+  @font-face {
+    font-family: "GabrielSans";
+    src: url("/src/assets/fonts/Gabriel-Sans-Bold-Italic.otf") format("opentype");
+    font-weight: 700;
+    /* 'Bold' usualmente es 700 */
+    font-style: italic;
+    font-display: swap;
+  }
+
+  // Gabriel-Sans-Bold.otf (Peso 700, Normal)
+  @font-face {
+    font-family: "GabrielSans";
+    src: url("/src/assets/fonts/Gabriel-Sans-Bold.otf") format("opentype");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  // Gabriel-Sans-Cond_Black.otf (Peso 900, Normal, Condensada)
+  @font-face {
+    font-family: "GabrielSans";
+    src: url("/src/assets/fonts/Gabriel-Sans-Cond_Black.otf") format("opentype");
+    font-weight: 900;
+    font-style: normal;
+    /* Si esta es una variante condensada específica y quieres que el navegador lo sepa,
+       puedes añadir font-stretch. Sin embargo, para usarla con Tailwind normalmente
+       basta con que todas compartan la misma font-family y los pesos/estilos. */
+    /* font-stretch: condensed; */
+    font-display: swap;
+  }
+
+  // Definición de variables CSS para los colores (si se usan en el CSS directamente)
+  // Aunque Tailwind ya está manejando esto con sus clases, mantener estas variables
+  // puede ser útil si tienes estilos CSS puros que las referencien.
+  :root {
+    --primary: rgba(30, 67, 63, 1);
+    --secondary: rgba(242, 203, 19, 1);
+    --tertiary: rgba(164, 141, 19, 1);
+
+    scrollbar-width: thin;
+    scrollbar-color: var(--color-primary) transparent; // Aquí es importante si --color-primary está definido
+
+    &::-webkit-scrollbar {
+      width: 10px;
+    }
+  }
 }
 
+// Capa para componentes personalizados o de bibliotecas.
 @layer components {
   @include meta.load-css("components");
   @include meta.load-css("navigation");
   @include meta.load-css("buttons");
+  // Incluye aquí otros archivos CSS de componentes
 }
 
-@layer utilities {
-  @include meta.load-css("utilities");
+// Ejemplo de animaciones
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
+
+.fade-0 {
+  animation: fade-in 1s ease-in-out;
+}
+
+.fade-1 {
+  animation: fade-in 1.5s ease-in-out;
+}
+
+/* Puedes añadir más clases de animación aquí */

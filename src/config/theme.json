@@ -2,8 +2,9 @@
   "colors": {
     "default": {
       "theme_color": {
-        "primary": "#8bcfad",
-        "secondary": "#e6f6ee",
+        "primary": "rgba(30, 67, 63, 1)",
+        "secondary": "rgba(242, 203, 19, 1)",
+        "tertiary": "rgba(164, 141, 19, 1)",
         "body": "#fafafa",
         "border": "#EBEBEB",
         "theme_light": "#E5E5E5",
@@ -19,7 +20,7 @@
 
   "fonts": {
     "font_family": {
-      "primary": "Inter:wght@400;500;600;700",
+      "primary": "",
       "primary_type": "sans-serif",
       "secondary": "Merriweather:wght@700;900",
       "secondary_type": "sans-serif"

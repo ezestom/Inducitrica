@@ -106,7 +106,7 @@ export function Form({
       >
         {/* Indicador de carga */}
         {isLoading && (
-          <div className="absolute top-0 left-0 right-0 bottom-0 backdrop-blur bg-white/10 opacity-50 flex justify-center items-center z-50 rounded-3xl">
+          <div className="absolute top-0 left-0 right-0 bottom-0 backdrop-blur bg-white/10 opacity-50 flex justify-center items-center z-50 ">
             <span className="loader"></span>
           </div>
         )}
@@ -138,7 +138,7 @@ export function Form({
             name="name"
             id="name"
             placeholder={name_placeholder}
-            className="p-2 my-2 w-full rounded-md border-gray-200 bg-white text-sm text-gray-700 opacity-75 shadow-sm"
+            className="p-2 my-2 w-full border-gray-200 bg-white text-sm text-gray-700 opacity-75 shadow-sm"
           />
         </div>
 
@@ -151,7 +151,7 @@ export function Form({
             {phone}
           </label>
           <input
-            className="p-2 my-2 w-full rounded-md border-gray-200 bg-white text-sm text-gray-700 opacity-75 shadow-sm"
+            className="p-2 my-2 w-full border-gray-200 bg-white text-sm text-gray-700 opacity-75 shadow-sm"
             type="phone"
             name="phone"
             id="phone"
@@ -172,7 +172,7 @@ export function Form({
             name="direction"
             id="direction"
             placeholder={direction_placeholder}
-            className="p-2 my-2 w-full rounded-md border-gray-200 bg-white text-sm text-gray-700 opacity-75 shadow-sm"
+            className="p-2 my-2 w-full border-gray-200 bg-white text-sm text-gray-700 opacity-75 shadow-sm"
           />
         </div>
 
@@ -185,7 +185,7 @@ export function Form({
             {email}
           </label>
           <input
-            className="p-2 my-2 w-full rounded-md border-gray-200 bg-white text-sm text-gray-700 opacity-75 shadow-sm"
+            className="p-2 my-2 w-full border-gray-200 bg-white text-sm text-gray-700 opacity-75 shadow-sm"
             type="email"
             name="email"
             id="email"
@@ -209,7 +209,7 @@ export function Form({
             name="point_1"
             id="point_1"
             placeholder={point_1_placeholder}
-            className="p-2 my-2 w-full rounded-md border-gray-200 bg-white text-sm text-gray-700 opacity-75 shadow-sm"
+            className="p-2 my-2 w-full border-gray-200 bg-white text-sm text-gray-700 opacity-75 shadow-sm"
           />
         </div>
 
@@ -226,7 +226,7 @@ export function Form({
             name="point_2"
             id="point_2"
             placeholder={point_2_placeholder}
-            className="p-2 my-2 w-full rounded-md border-gray-200 bg-white text-sm text-gray-700 opacity-75 shadow-sm"
+            className="p-2 my-2 w-full border-gray-200 bg-white text-sm text-gray-700 opacity-75 shadow-sm"
           />
         </div>
 
@@ -243,7 +243,7 @@ export function Form({
             name="point_3"
             id="point_3"
             placeholder={point_3_placeholder}
-            className="p-2 my-2 w-full rounded-md border-gray-200 bg-white text-sm text-gray-700 opacity-75 shadow-sm"
+            className="p-2 my-2 w-full border-gray-200 bg-white text-sm text-gray-700 opacity-75 shadow-sm"
           />
         </div>
 
@@ -260,7 +260,7 @@ export function Form({
             name="point_4"
             id="point_4"
             placeholder={point_4_placeholder}
-            className="p-2 my-2 w-full rounded-md border-gray-200 bg-white text-sm text-gray-700 opacity-75 shadow-sm"
+            className="p-2 my-2 w-full border-gray-200 bg-white text-sm text-gray-700 opacity-75 shadow-sm"
           />
         </div>
 
@@ -277,7 +277,7 @@ export function Form({
             name="point_5"
             id="point_5"
             placeholder={point_5_placeholder}
-            className="p-2 my-2 w-full rounded-md border-gray-200 bg-white text-sm text-gray-700 opacity-75 shadow-sm"
+            className="p-2 my-2 w-full border-gray-200 bg-white text-sm text-gray-700 opacity-75 shadow-sm"
           />
         </div>
 
@@ -290,7 +290,7 @@ export function Form({
             name="message"
             id="message"
             required
-            className="w-full border-gray-200 rounded-md bg-white text-sm text-gray-700 shadow-sm p-2"
+            className="w-full border-gray-200 bg-white text-sm text-gray-700 shadow-sm p-2"
             placeholder={message_placeholder}
           ></textarea>
         </fieldset>
@@ -298,7 +298,7 @@ export function Form({
         {/* Botón de Envío */}
         <div className="flex flex-col items-center justify-center col-span-6 mt-2">
           <button
-            className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-xl bg-gradient-to-r bg-primary hover:shadow py-3 font-medium text-md text-gray-50 backdrop-blur-3xl  transition mt-2"
+            className="inline-flex h-full w-full cursor-pointer items-center justify-center bg-gradient-to-r bg-primary hover:shadow py-3 font-medium text-md text-gray-50 backdrop-blur-3xl  transition mt-2"
             type="submit"
           >
             {send}

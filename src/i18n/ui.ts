@@ -1,11 +1,11 @@
 export const languages: Record<string, { code: string; name: string }> = {
   es: {
     code: "es",
-    name: "Esp",
+    name: "ES",
   },
   en: {
     code: "en",
-    name: "Eng",
+    name: "EN",
   },
 };
 
@@ -14,14 +14,24 @@ export const showDefaultLang = false;
 
 export const ui = {
   es: {
-    "nav.home": "Inicio",
     "nav.about": "Nosotros",
-    "nav.contact": "Contacto",
+    "nav.products": "Productos",
+    "nav.productJuice": "Jugo de limón",
+    "nav.productPeel": "Cáscara de limón",
+    "nav.productOil": "Aceite de limón",
+    "nav.environment": "Medio ambiente",
+    "nav.ethics": "Ética",
+    "nav.comunity": "Comunidad",
   },
   en: {
-    "nav.home": "Home",
-    "nav.about": "About Us",
-    "nav.contact": "Contact",
+    "nav.about": "About",
+    "nav.products": "Products",
+    "nav.productJuice": "Lemon Juice",
+    "nav.productPeel": "Lemon Peel",
+    "nav.productOil": "Lemon Oil",
+    "nav.environment": "Environment",
+    "nav.ethics": "Ethics",
+    "nav.comunity": "Comunity",
   },
 } as const;
 

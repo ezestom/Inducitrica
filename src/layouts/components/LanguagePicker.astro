@@ -16,64 +16,70 @@ const otherLocales = Object.values(languages).filter(
 );
 ---
 
-<div class="z-20 w-fit">
-  <div class="backdrop-blur group rounded-3xl transition-all">
+<div class="z-20">
+  <div class="backdrop-blur group transition-all translate-y-1">
     <button
       type="button"
-      class={`btn btn-white btn-sm items-center text-sm font-bold aspect-square flex justify-center backdrop-blur overflow-hidden text-primary-950 shadow ring-primary-950 transition hover:bg-primary-200/75 focus:outline-none flag-${lang} z-20`}
+      class={`flag-${lang} z-10 inline-flex size-8 m-auto`}
       aria-expanded="true"
       aria-haspopup="true">
       <!-- <currentLocaleData.flag /> -->
-      <span class="text-black z-20"> {currentLocaleData.name}</span>
+      <span class="text-black z-20 sr-only"> {currentLocaleData.name}</span>
     </button>
     <ul
-      class="group-hover:animate-fade-down group-hover:animate-duration-200 group-flex-col absolute hidden w-full gap-1 pt-1 group-hover:flex group-hover:flex-col">
+      class="group-flex-col absolute hidden w-full group-hover:flex group-hover:flex-col">
       {
         otherLocales.map((locale) => (
           <a
-            class="inline-flex btn btn-white btn-sm text-sm font-bold items-center justify-center rounded-3xl text-primary-950 shadow ring-primary-950 transition hover:bg-primary-200/75 focus:outline-none"
+            class="inline-flex px-2 -translate-x-1 bg-secondary rounded-full text-primary text-xs font-semibold items-center justify-center aspect-square  text-primary-950 shadow ring-primary-950 transition  focus:outline-none"
             href={locale.code === "en" ? `/en/home` : `/`}>
-            {locale.name}
+            <span>{locale.name}</span>
           </a>
         ))
       }
     </ul>
   </div>
+
+  <script>
+    const changeLanguage = (e: any) => {
+      e.preventDefault();
+      const url = e.target.href;
+      window.location = url;
+    };
+
+    // agregar el evento click a los elementos de la lista
+    const languageBtn = document.getElementById("language-btn");
+    const languageBtnItems = languageBtn?.querySelectorAll("a");
+    languageBtnItems?.forEach((item) => {
+      item.addEventListener("click", changeLanguage);
+    });
+  </script>
+
+  <style>
+    .flag-en::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-image: url("/public/images/flags/eeuu_flag.png");
+      background-size: cover;
+      background-position: center;
+      max-width: 75%;
+      max-height: 75%;
+      /* opacity: 0.1; */
+      /* filter: drop-shadow(0 0 4px rgba(0, 0, 0, 0.25)); */
+    }
+
+    .flag-es::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-image: url("/public/images/flags/arg_flag.png");
+      background-size: cover;
+      background-position: center;
+      max-width: 75%;
+      max-height: 75%;
+      /* opacity: 0.1; */
+      /* filter: drop-shadow(0 0 4px rgba(0, 0, 0.25)); */
+    }
+  </style>
 </div>
-
-<script>
-  const changeLanguage = (e: any) => {
-    e.preventDefault();
-    const url = e.target.href;
-    window.location = url;
-  };
-
-  // agregar el evento click a los elementos de la lista
-  const languageBtn = document.getElementById("language-btn");
-  const languageBtnItems = languageBtn?.querySelectorAll("a");
-  languageBtnItems?.forEach((item) => {
-    item.addEventListener("click", changeLanguage);
-  });
-</script>
-
-<style>
-  .flag-en::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background-image: url("/public/images/flags/US.svg");
-    background-size: cover;
-    background-position: center;
-    opacity: 0.1;
-  }
-
-  .flag-es::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background-image: url("/public/images/flags/AR.svg");
-    background-size: cover;
-    background-position: center;
-    opacity: 0.1;
-  }
-</style>

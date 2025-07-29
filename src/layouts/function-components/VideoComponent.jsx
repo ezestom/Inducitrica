@@ -31,15 +31,16 @@ const VideoComponent = ({
             height={height}
             src={src}
             alt={title}
-            className="inline h-auto max-w-full rounded-3xl aspect-video"
+            className="inline max-w-full aspect-video"
           />
         </div>
       ) : (
-        <div className="youtube mx-auto text-center aspect-video bg-gray-200 rounded-3xl">
+        <div className="youtube text-center aspect-video h-full w-full bg-black">
           <YouTube
             videoId={video_id}
+            // videoId=""
             opts={videoOptions}
-            iframeClassName={`aspect-video ${video_height} ${video_width} max-w-full bg-transparent rounded-3xl`}
+            iframeClassName={`!aspect-video !w-full !h-full ${video_height} ${video_width} max-w-full bg-transparent`}
           />
         </div>
       )}

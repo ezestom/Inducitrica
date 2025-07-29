@@ -1,9 +1,8 @@
 ---
-import Social from "@/components/Social.astro";
 import config from "@/config/config.json";
 import menu from "@/config/menu.json";
-import social from "@/config/social.json";
 import { markdownify } from "@/lib/utils/textConverter";
+import companiesLogo from "/public/images/texture_bg/companies_logos.png";
 const { footer } = menu;
 const { copyright, location, email, phone1, phone2, footer_description } =
   config.params;
@@ -25,52 +24,73 @@ const complaint = {
 };
 ---
 
-<footer class="footer bg-[#F1F1F1]">
-  <div class="container w-full max-w-[1440px]">
-    <div
-      class="gx-5 row pb-10 pt-[52px] w-full flex items-start justify-between">
-      <div class="col-12 mt-12 md:col-6 lg:col-3 text-start">
-        <h6>Links</h6>
-
-        <Social
-          source={social}
-          className="social-icons mt-4 lg:mt-6 text-gray-800 "
-        />
-      </div>
-
-      <div class="col-12 mt-12 md:col-6 lg:col-3 text-start">
-        <h6>Location</h6>
-        <ul>
-          <li class="mb-2">{location}</li>
-          <li class="mb-2">
-            <a class="mb-2 hover:text-primary" href={`mailto:${email}`}
-              >{email}</a
-            >
-          </li>
-          <li>
-            <a class="hover:text-primary hover:underline" href={`tel:${phone2}`}
-              >{phone2}</a
-            >
-          </li>
-          <!-- <li>
-            <a class="hover:text-primary hover:underline" href="/complaint"
-              >• Denuncias</a
-            >
-          </li> -->
-          <HeaderLink
-            href={complaint.href}
-            locale={lang}
-            class="text-red-300 hover:text-red-500 text-sm hover:underline">
-            <span> • Formulario de denuncias</span>
-          </HeaderLink>
-        </ul>
-      </div>
-      <div class="container max-w-[1440px]">
-        <div
-          class="footer-copyright mx-auto border-t border-border pb-10 pt-7 text-center">
-          <p class="content text-text" set:html={markdownify(copyright)} />
+<footer class="footer flex flex-col items-center justify-center">
+  <div class="container w-full px-2 lg:px-20 py-6 lg:py-12">
+    <div class="footer-header text-center">
+      <aside class="flex justify-center items-center">
+        <!-- <div class="w-1/2 flex items-center justify-center">
+          <img
+            src={companiesLogo.src}
+            alt=""
+            class="max-h-[400px] drop-shadow-md"
+          />
         </div>
+        <div class="w-1/2 flex items-center justify-center">
+          <img
+            src="../../../public/images/texture_bg/lemon.png"
+            alt=""
+            class="max-h-[350px] drop-shadow-2xl"
+          />
+        </div> -->
+        <img
+          src="../../../public/images/texture_bg/logos.png"
+          alt=""
+          class="max-h-[450px] w-full object-contain"
+        />
+      </aside>
+      <h2 class="text-2xl text-black">
+        {markdownify(footer_description)}
+      </h2>
+    </div>
+    <ul
+      class="grid lg:grid-cols-3 lg:flex lg:justify-between text-center items-start lg:items-center flex-wrap text-black text-xs lg:text-sm gap-2">
+      <li class="px-1">San Martín 910 Piso 3</li>
+      <hr class="rotate-60 my-2 h-4 border-l-2 border-black hidden lg:block" />
+      <li class="px-1">San Miguel de Tucumán</li>
+      <hr class="rotate-60 my-2 h-4 border-l-2 border-black hidden lg:block" />
+      <li class="px-1">Tucumán</li>
+      <hr class="rotate-60 my-2 h-4 border-l-2 border-black hidden lg:block" />
+      <li class="px-1">Argentina</li>
+      <hr class="rotate-60 my-2 h-4 border-l-2 border-black hidden lg:block" />
+
+      <li class="px-1">
+        <a href={`mailto:${email}`}>{email}</a>
+      </li>
+      <hr class="rotate-60 my-2 h-4 border-l-2 border-black hidden lg:block" />
+      <li class="px-1">
+        <a href={`tel:${phone2}`} class="text-xs lg:text-sm">{phone2}</a>
+      </li>
+      <hr class="rotate-60 my-2 h-4 border-l-2 border-black hidden lg:block" />
+      <HeaderLink href={complaint.href} locale={lang}>
+        <span class="hover:underline"> Formulario de denuncias</span>
+      </HeaderLink>
+    </ul>
+
+    <div class="container max-w-[1440px] text-black">
+      <div class="footer-copyright mx-auto pb-10 pt-10 text-center">
+        <p class="content" set:html={markdownify(copyright)} />
       </div>
     </div>
   </div>
 </footer>
+
+<style>
+  .footer {
+    /* background-image: url("../../../public/images/texture_bg/bg_yellow.png");
+
+    margin: 0 auto;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; */
+  }
+</style>
