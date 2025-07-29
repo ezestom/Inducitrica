@@ -14,8 +14,7 @@ const { image, title, lang, href } = Astro.props as Props;
 <HeaderLink
   href={href}
   locale={lang}
-  class="group relative flex flex-col overflow-hidden w-full cursor-pointer"
-  aria-label="Open blog post dialog">
+  class="group relative flex flex-col overflow-hidden w-full cursor-pointer">
   <figure
     class="flex flex-col items-start justify-center w-full h-[300px] xl:h-[500px] relative">
     <img
@@ -23,7 +22,6 @@ const { image, title, lang, href } = Astro.props as Props;
       alt="art cover"
       loading="lazy"
       class="lg:h-full w-full object-cover"
-      transition:name={image}
     />
     <div class="relative">
       <h3
