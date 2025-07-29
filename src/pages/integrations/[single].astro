@@ -1,7 +1,6 @@
 ---
 import { Image } from "astro:assets";
 import PageHeader from "@/components/PageHeader.astro";
-import Shape from "@/components/Shape.astro";
 import Base from "@/layouts/Base.astro";
 import { getSinglePage } from "@/lib/contentParser.astro";
 import { humanize, markdownify } from "@/lib/utils/textConverter";
@@ -9,7 +8,7 @@ import { getEntryBySlug } from "astro:content";
 import type { TIntegrationsIndex } from "@/types";
 const integraionsIndex = (await getEntryBySlug<any, string>(
   "integrations",
-  "-index",
+  "-index"
 )) as TIntegrationsIndex;
 
 export async function getStaticPaths() {
@@ -36,9 +35,7 @@ const page_data = {
   title={post.data.title}
   meta_title={post.data.meta_title}
   description={post.data.description}
-  image={post.data.image}
->
-  <Shape />
+  image={post.data.image}>
   <section class="page-hero pb-8 pt-16">
     <div class="container">
       <div class="page-hero-content mx-auto text-center">
