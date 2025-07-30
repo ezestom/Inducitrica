@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import "./BlogCard2.css";
-import close from "../../../../public/images/icons/x.svg";
+import close from "/public/images/icons/x.svg";
 
 export function BlogCard2({
   image,

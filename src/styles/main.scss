@@ -16,7 +16,7 @@
   // Gabriel-Sans-Black-Italic.otf (Peso 900, Itálica)
   @font-face {
     font-family: "GabrielSans";
-    src: url("../../public/fonts/Gabriel-Sans-Black-Italic.otf") format("opentype");
+    src: url("/public/fonts/Gabriel-Sans-Black-Italic.otf") format("opentype");
     font-weight: 900;
     /* 'Black' usualmente es 900 */
     font-style: italic;
@@ -27,7 +27,7 @@
   // Gabriel-Sans-Black.otf (Peso 900, Normal)
   @font-face {
     font-family: "GabrielSans";
-    src: url("../../public/fonts/Gabriel-Sans-Black.otf") format("opentype");
+    src: url("/public/fonts/Gabriel-Sans-Black.otf") format("opentype");
     font-weight: 900;
     font-style: normal;
     font-display: swap;
@@ -36,7 +36,7 @@
   // Gabriel-Sans-Bold-Italic.otf (Peso 700, Itálica)
   @font-face {
     font-family: "GabrielSans";
-    src: url("../../public/fonts/Gabriel-Sans-Bold-Italic.otf") format("opentype");
+    src: url("/public/fonts/Gabriel-Sans-Bold-Italic.otf") format("opentype");
     font-weight: 700;
     /* 'Bold' usualmente es 700 */
     font-style: italic;
@@ -46,7 +46,7 @@
   // Gabriel-Sans-Bold.otf (Peso 700, Normal)
   @font-face {
     font-family: "GabrielSans";
-    src: url("../../public/fonts/Gabriel-Sans-Bold.otf") format("opentype");
+    src: url("/public/fonts/Gabriel-Sans-Bold.otf") format("opentype");
     font-weight: 700;
     font-style: normal;
     font-display: swap;
@@ -55,7 +55,7 @@
   // Gabriel-Sans-Cond_Black.otf (Peso 900, Normal, Condensada)
   @font-face {
     font-family: "GabrielSans";
-    src: url("../../public/fonts/Gabriel-Sans-Cond_Black.otf") format("opentype");
+    src: url("/public/fonts/Gabriel-Sans-Cond_Black.otf") format("opentype");
     font-weight: 900;
     font-style: normal;
     /* Si esta es una variante condensada específica y quieres que el navegador lo sepa,

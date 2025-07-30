@@ -12,10 +12,10 @@ import {
   Navigation,
 } from "swiper/modules";
 
-import home3 from "../../../../public/images/slide/2.webp";
-import home2 from "../../../../public/images/slide/3.webp";
-import home1 from "../../../../public/images/slide/1.webp";
-import logo from "../../../../public/images/logo2.webp";
+import home3 from "/public/images/slide/2.webp";
+import home2 from "/public/images/slide/3.webp";
+import home1 from "/public/images/slide/1.webp";
+import logo from "/public/images/logo2.webp";
 
 import "./SlideHero.css";
 import HeaderLink from "../HeaderLink.jsx";

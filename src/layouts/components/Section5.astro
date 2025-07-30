@@ -6,13 +6,12 @@ import {
 } from "../../i18n/utils";
 import HeaderLink from "../components/HeaderLink.astro";
 
-import img1 from "../../../public/images/photos/gallery_1.webp";
-import img2 from "../../../public/images/photos/gallery_2.webp";
-import img3 from "../../../public/images/photos/gallery_3.webp";
-import img4 from "../../../public/images/photos/gallery_4.webp";
-import img5 from "../../../public/images/galery/5.webp";
-import logo from "../../../public/images/logo.png";
-import button from "../../../public/images/button.png";
+import img1 from "/public/images/photos/gallery_1.webp";
+import img2 from "/public/images/photos/gallery_2.webp";
+import img3 from "/public/images/photos/gallery_3.webp";
+import img4 from "/public/images/photos/gallery_4.webp";
+import img5 from "/public/images/galery/5.webp";
+import button from "/public/images/button.png";
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
@@ -20,7 +19,7 @@ const translatePath = useTranslatedPath(lang);
 ---
 
 <section
-  class="lg:parent max-w-screen  lg:p-24 lg:py-12 lg:grid grid-cols-3 lg:grid-rows-4 gap-0 relative overflow-hidden lg:max-h-[75vh]">
+  class="lg:parent max-w-screen lg:p-24 lg:py-12 lg:grid grid-cols-3 lg:grid-rows-4 gap-0 relative overflow-hidden lg:max-h-[75vh]">
   <div class="div1 h-[100px] lg:h-full"><img src={img1.src} alt="" /></div>
   <div class="div2 h-[100px] lg:h-full"><img src={img2.src} alt="" /></div>
   <div class="div3 h-[100px] lg:h-full"><img src={img3.src} alt="" /></div>
@@ -30,7 +29,7 @@ const translatePath = useTranslatedPath(lang);
     href="/gallery"
     locale={lang}
     class="home-swiper absolute top-0 left-0 right-0 bottom-0 m-auto z-20 flex-col lg:flex-row flex justify-center items-center w-full lg:w-fit mx-auto h-fit hover:drop-shadow-md transition-all duration-300 ease-in-out active:scale-[.98]">
-    <img src={button.src} alt="button-image" class="max-w-[550px] px-2">
+    <img src={button.src} alt="button-image" class="max-w-[550px] px-2" />
     <!-- <div class="items-center !h-full hidden lg:flex">
       <img
         src={logo.src}
