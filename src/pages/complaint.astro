@@ -1,12 +1,12 @@
 ---
 import config from "@/config/config.json";
 import Base from "@/layouts/Base.astro";
-import { getEntryBySlug } from "astro:content";
+import { getEntry } from "astro:content";
 import { Form } from "@/components/complaintForm/Form.jsx";
 
-const entry = await getEntryBySlug("complaint", "index");
+const entry = await getEntry("complaint", "index");
 const { contact_form_action } = config.params;
-const complaint = entry.data;
+const complaint = entry?.data;
 const page_data = {
   ...complaint,
   content: complaint.body,

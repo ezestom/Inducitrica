@@ -3,12 +3,12 @@ import PageHeader from "@/components/PageHeader.astro";
 import config from "@/config/config.json";
 import Base from "@/layouts/Base.astro";
 import { Image } from "astro:assets";
-import { getEntryBySlug } from "astro:content";
+import { getEntry } from "astro:content";
 import { Form } from "@/components/Form/Form.jsx";
 
-const entry = await getEntryBySlug("contact", "index");
+const entry = await getEntry("contact", "index");
 const { contact_form_action } = config.params;
-const contact = entry.data;
+const contact = entry?.data;
 const page_data = {
   ...contact,
   content: contact.body,
