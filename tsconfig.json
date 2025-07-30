@@ -26,5 +26,5 @@
     "**/*.astro",
     "src/layouts/shortcodes/Tabs.jsx"
   ],
-  "exclude": ["node_modules"]
+  "exclude": ["node_modules", "src/layouts/components/NewsCard.astro"]
 }
