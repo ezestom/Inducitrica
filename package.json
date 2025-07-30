@@ -8,6 +8,8 @@
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
+    "clean": "rm -rf dist .astro node_modules/.vite",
+    "build:clean": "npm run clean && npm install && npm run build",
     "json": "node scripts/jsonGenerator.js",
     "format": "prettier -w ."
   },
